@@ -1,9 +1,45 @@
 import React, {useContext} from 'react';
-
+import '../Styles/About.css';
+import young_tuan from '../assets/img/young_tuan.jpg';
+import {
+  ImInstagram,
+  ImGithub,
+  ImLinkedin,
+} from 'react-icons/im';
 const About = () => {
 
     return (
-        <div>About</div>
+        <div className='profile-container'>
+          <img className='profile-pic' src={young_tuan}/>
+          
+
+            <div className='profile-info'>
+                <h2 className='name'>Tuan</h2>
+                
+                <ul>
+                    <li>
+                    <a className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank'>
+                        <ImInstagram className='icons'/> @tuanqchau_
+                    </a>
+                    </li>
+
+                    <li>
+                    <a className="social-icons" href='https://github.com/tuanqchau' target='_blank'>
+                        <ImGithub className='icons'/> tuanqchau
+                    </a>
+                    </li>
+
+                    <li>
+                    <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
+                        <ImLinkedin className='icons'/> Tuan Chau
+                    </a>
+                    </li>  
+                </ul>  
+            </div>
+            
+         
+         
+        </div>
     );
 }
 

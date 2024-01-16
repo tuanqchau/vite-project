@@ -1,0 +1,55 @@
+.social-icons {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+  
+  .icons {
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+  .social-icons:hover {
+    color: grey;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
+  ul {
+    list-style-type: none;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  
+
+
+.profile-info {
+    justify-content: left;
+    align-items: left;
+}
+
+.name {
+    font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,16 +1,16 @@
 import {Link} from 'react-router-dom'
-
+import '../Styles/Navbar.css'
 const Navbar = () => {
 
     return (
-        <div>
-            <Link to={'/home'}> 
+        <div className='navbar-container'>
+            <Link to={'/home'} className="nav-link"> 
             Home
             </Link>
-            <Link to={'/photos'}> 
+            <Link to={'/photos'} className="nav-link"> 
             Photos
             </Link>
-            <Link to={'/about'}> 
+            <Link to={'/about'} className="nav-link"> 
             About
             </Link>
 
