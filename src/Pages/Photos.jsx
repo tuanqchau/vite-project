@@ -14,7 +14,7 @@ import img12 from '../assets/img/img12.jpg';
 import img13 from '../assets/img/img13.jpg'; 
 import img14 from '../assets/img/img14.jpg'; 
 import img15 from '../assets/img/img15.jpg'; 
-
+import img16 from '../assets/img/img16.jpg'; 
 import '../Styles/Photos.css'
 const Photos = () => {
   const photosData = [
@@ -24,7 +24,7 @@ const Photos = () => {
     { id: 13, src: img13, fullSize: img13 },
     { id: 14, src: img14, fullSize: img14 },
     { id: 15, src: img15, fullSize: img15 },
-    { id: 1, src: img1, fullSize: img1 },
+    { id: 16, src: img16, fullSize: img16 },
     { id: 2, src: img2, fullSize: img2 },
     { id: 3, src: img3, fullSize: img3 },
     { id: 4, src: img4, fullSize: img4 },
