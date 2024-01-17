@@ -15,7 +15,6 @@ const About = () => {
 
             <div className='profile-info'>
                 <h2 className='name'>Tuan</h2>
-                
                 <ul>
                     <li>
                     <a className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank'>

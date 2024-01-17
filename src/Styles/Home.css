@@ -1,0 +1,23 @@
+.container {
+    margin-top: 80px;
+    position: relative;
+}
+
+.home-img {
+    width: 1000px;
+    z-index: 1;
+    right: 20%;
+    position: absolute;
+}
+
+
+
+.title-text {
+    z-index: 2;
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    left: 33%;
+    font-size: 125px;
+    text-align: left;
+    color:rgb(14, 14, 14);
+}

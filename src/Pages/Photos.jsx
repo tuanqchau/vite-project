@@ -64,7 +64,7 @@ const Photos = () => {
       <div className="photo-grid">
             {photosData.map((photo) => (
               <div key={photo.id} className="photo" onClick={() => handlePhotoClick(photo)}>
-                <img className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} />
+                <img loading='lazy' className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} />
               </div>
             ))}
       </div>

@@ -6,6 +6,8 @@
   margin-top: 15px;
 }
 
+
+
 .photo-grid {
   grid-template-columns: repeat(3, 1fr);
   display: grid;
@@ -14,7 +16,22 @@
   padding: 0 2rem;
 }
 
+@media (min-width: 300px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 790px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for screens wider than 768px */
+  }
+}
 
+@media (min-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for screens wider than 1024px */
+  }
+}
 
 .modal {
   position: fixed;
