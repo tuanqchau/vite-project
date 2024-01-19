@@ -15,26 +15,44 @@ import img13 from '../assets/img/img13.jpg';
 import img14 from '../assets/img/img14.jpg'; 
 import img15 from '../assets/img/img15.jpg'; 
 import img16 from '../assets/img/img16.jpg'; 
+
+import img1small from '../assets/img-small/img1-small.jpg'
+import img2small from '../assets/img-small/img2-small.jpg'
+import img3small from '../assets/img-small/img3-small.jpg'
+import img4small from '../assets/img-small/img4-small.jpg'
+import img5small from '../assets/img-small/img5-small.jpg'
+import img6small from '../assets/img-small/img6-small.jpg'
+import img7small from '../assets/img-small/img7-small.jpg'
+import img8small from '../assets/img-small/img8-small.jpg'
+import img9small from '../assets/img-small/img9-small.jpg'
+import img10small from '../assets/img-small/img10-small.jpg'
+import img11small from '../assets/img-small/img11-small.jpg'
+import img12small from '../assets/img-small/img12-small.jpg'
+import img13small from '../assets/img-small/img13-small.jpg'
+import img14small from '../assets/img-small/img14-small.jpg'
+import img15small from '../assets/img-small/img15-small.jpg'
+import img16small from '../assets/img-small/img16-small.jpg'
+
 import '../Styles/Photos.css'
 import { motion } from "framer-motion"
 const Photos = () => {
   const photosData = [
   
-    { id: 11, src: img11, fullSize: img11 },
-    { id: 12, src: img12, fullSize: img12 },
-    { id: 13, src: img13, fullSize: img13 },
-    { id: 14, src: img14, fullSize: img14 },
-    { id: 15, src: img15, fullSize: img15 },
-    { id: 16, src: img16, fullSize: img16 },
-    { id: 2, src: img2, fullSize: img2 },
-    { id: 3, src: img3, fullSize: img3 },
-    { id: 4, src: img4, fullSize: img4 },
-    { id: 5, src: img5, fullSize: img5 },
-    { id: 6, src: img6, fullSize: img6 },
-    { id: 7, src: img7, fullSize: img7 },
-    { id: 8, src: img8, fullSize: img8 },
-    { id: 9, src: img9, fullSize: img9 },
-    { id: 10, src: img10, fullSize: img10 },
+    { id: 11, src: img11small, fullSize: img11 },
+    { id: 12, src: img12small, fullSize: img12 },
+    { id: 13, src: img13small, fullSize: img13 },
+    { id: 14, src: img14small, fullSize: img14 },
+    { id: 15, src: img15small, fullSize: img15 },
+    { id: 16, src: img16small, fullSize: img16 },
+    { id: 2, src: img2small, fullSize: img2 },
+    { id: 3, src: img3small, fullSize: img3 },
+    { id: 4, src: img4small, fullSize: img4 },
+    { id: 5, src: img5small, fullSize: img5 },
+    { id: 6, src: img6small, fullSize: img6 },
+    { id: 7, src: img7small, fullSize: img7 },
+    { id: 8, src: img8small, fullSize: img8 },
+    { id: 9, src: img9small, fullSize: img9 },
+    { id: 10, src: img10small, fullSize: img10 },
     
     // Add more photos as needed
   ];
