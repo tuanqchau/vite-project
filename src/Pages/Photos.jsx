@@ -16,6 +16,7 @@ import img14 from '../assets/img/img14.jpg';
 import img15 from '../assets/img/img15.jpg'; 
 import img16 from '../assets/img/img16.jpg'; 
 import '../Styles/Photos.css'
+import { motion } from "framer-motion"
 const Photos = () => {
   const photosData = [
   
@@ -64,7 +65,12 @@ const Photos = () => {
       <div className="photo-grid">
             {photosData.map((photo) => (
               <div key={photo.id} className="photo" onClick={() => handlePhotoClick(photo)}>
-                <img loading='lazy' className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} />
+                <motion.img 
+                initial={{opacity: 0, y: '40%'}}
+                animate={{opacity: 1, y:0}}
+                exit={{opacity:0, y:'40%'}}
+                transition={{ duration: 0.85 }}
+                loading='lazy' className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} />
               </div>
             ))}
       </div>

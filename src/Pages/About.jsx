@@ -6,11 +6,20 @@ import {
   ImGithub,
   ImLinkedin,
 } from 'react-icons/im';
+import {motion} from 'framer-motion';
+
 const About = () => {
 
     return (
         <div className='profile-container'>
-          <img className='profile-pic' src={young_tuan}/>
+          <motion.img 
+        initial={{x: '-500%'}}
+
+          animate={{ rotate: 360, x:'600%' }}
+          transition={{ repeat: Infinity, duration: 2, ease: 'linear' }}
+          
+
+          className='profile-pic' src={young_tuan}/>
           
 
             <div className='profile-info'>
