@@ -93,7 +93,7 @@ const Photos = () => {
                 <motion.img 
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
-                exit={{opacity:0, y:'40%'}}
+                exit={{opacity:0}}
                 transition={{ duration: 1 }}
                 loading='lazy' className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} />
               </div>
@@ -103,7 +103,11 @@ const Photos = () => {
       {selectedPhoto && (
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal">
-            <img src={selectedPhoto.fullSize} alt={`Full-size Photo ${selectedPhoto.id}`} />
+          <motion.img 
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                exit={{opacity:0}}
+                transition={{ duration: 1 }} src={selectedPhoto.fullSize} alt={`Full-size Photo ${selectedPhoto.id}`} />
           </div>
         </div>
       )}
