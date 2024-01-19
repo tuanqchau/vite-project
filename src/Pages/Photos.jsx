@@ -59,7 +59,7 @@ const Photos = () => {
   
 
   return (
-    <div>
+    <div className='photo-grid-container'>
       
       <div className="photo-grid">
             {photosData.map((photo) => (

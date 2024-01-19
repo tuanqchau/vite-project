@@ -1,5 +1,5 @@
 .social-icons {
-    font-size: 15px;
+    font-size: 14px;
     display: block;
     margin-bottom: 10px;
     text-align: left;
@@ -8,7 +8,7 @@
   }
   
   .icons {
-    padding-right: 10px;
+    padding-right: 5px;
     margin-top: 10px;
   }
   .social-icons:hover {
@@ -19,6 +19,14 @@
     width: 200px;
     height: 200px;
     border-radius: 100px;
+  }
+
+  @media (max-width: 500px) {
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+    }
   }
   ul {
     list-style-type: none;
@@ -37,6 +45,7 @@
   .profile-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 100px;
     flex: 0 0 100%;
     width: 100%;
