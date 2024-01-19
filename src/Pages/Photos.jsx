@@ -15,6 +15,8 @@ import img13 from '../assets/img/img13.jpg';
 import img14 from '../assets/img/img14.jpg'; 
 import img15 from '../assets/img/img15.jpg'; 
 import img16 from '../assets/img/img16.jpg'; 
+import img17 from '../assets/img/img17.jpg'; 
+import img18 from '../assets/img/img18.jpg'; 
 
 import img1small from '../assets/img-small/img1-small.jpg'
 import img2small from '../assets/img-small/img2-small.jpg'
@@ -32,6 +34,8 @@ import img13small from '../assets/img-small/img13-small.jpg'
 import img14small from '../assets/img-small/img14-small.jpg'
 import img15small from '../assets/img-small/img15-small.jpg'
 import img16small from '../assets/img-small/img16-small.jpg'
+import img17small from '../assets/img-small/img17-small.jpg'
+import img18small from '../assets/img-small/img18-small.jpg'
 
 import '../Styles/Photos.css'
 import { motion } from "framer-motion"
@@ -53,6 +57,9 @@ const Photos = () => {
     { id: 8, src: img8small, fullSize: img8 },
     { id: 9, src: img9small, fullSize: img9 },
     { id: 10, src: img10small, fullSize: img10 },
+    { id: 17, src: img17small, fullSize: img17 },
+    { id: 18, src: img18small, fullSize: img18 },
+    { id: 1, src: img1small, fullSize: img1 },
     
     // Add more photos as needed
   ];
@@ -84,10 +91,10 @@ const Photos = () => {
             {photosData.map((photo) => (
               <div key={photo.id} className="photo" onClick={() => handlePhotoClick(photo)}>
                 <motion.img 
-                initial={{opacity: 0, y: '40%'}}
-                animate={{opacity: 1, y:0}}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
                 exit={{opacity:0, y:'40%'}}
-                transition={{ duration: 0.85 }}
+                transition={{ duration: 1 }}
                 loading='lazy' className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} />
               </div>
             ))}

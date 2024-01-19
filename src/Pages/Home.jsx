@@ -1,4 +1,4 @@
-import img8 from '../assets/img/img8.jpg'
+import img8 from '../assets/img-small/img8-small.jpg'
 import '../Styles/Home.css'
 import { motion } from "framer-motion"
 

@@ -13,16 +13,15 @@ const About = () => {
     return (
         <div className='profile-container'>
           <motion.img 
-        initial={{x: '-500%'}}
-
-          animate={{ rotate: 360, x:'600%' }}
-          transition={{ repeat: Infinity, duration: 2, ease: 'linear' }}
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={{duration: 0.85}}
+            className='profile-pic' src={young_tuan}/>
           
-
-          className='profile-pic' src={young_tuan}/>
-          
-
-            <div className='profile-info'>
+            <motion.div className='profile-info' 
+                initial={{opacity: 0}}
+                animate={{ opacity: 1 }}
+                transition={{duration: 0.85}}>
                 <h2 className='name'>Tuan</h2>
                 <ul>
                     <li>
@@ -43,7 +42,7 @@ const About = () => {
                     </a>
                     </li>  
                 </ul>  
-            </div>
+            </motion.div>
             
          
          
