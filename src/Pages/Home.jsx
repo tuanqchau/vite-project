@@ -12,7 +12,7 @@ const Home = () => {
             animate={{opacity: 1, y:0}}
             exit={{opacity:0, y:'-80%'}}
             transition={{ duration: 0.85 }}
-            className='title-text' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} style={{ color: '#000000' }}>Film photography<br/>& Programming</motion.h1>
+            className='title-text' >Film photography<br/>& Programming</motion.h1>
                 <motion.img 
                 initial={{opacity: 0, y: '40%'}}
                 animate={{opacity: 1, y:0}}

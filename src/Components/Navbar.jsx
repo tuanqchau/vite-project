@@ -7,13 +7,13 @@ const Navbar = () => {
 
     return (
         <div className='navbar-container'>
-            <Link to={'/home'} className="nav-link" onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}> 
+            <Link to={'/home'} className="nav-link"> 
             Home
             </Link>
-            <Link to={'/photos'} className="nav-link" onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}> 
+            <Link to={'/photos'} className="nav-link"> 
             Gallery
             </Link>
-            <Link to={'/about'} className="nav-link" onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}> 
+            <Link to={'/about'} className="nav-link"> 
             About
             </Link>
 

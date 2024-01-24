@@ -24,7 +24,7 @@ const About = () => {
                 initial={{opacity: 0}}
                 animate={{ opacity: 1 }}
                 transition={{duration: 0.85}}> 
-                <h2 className='name' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>Tuan</h2>
+                <h2 className='name'>Tuan</h2>
                 <ul>
                     <li>
                     <a onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank'>
