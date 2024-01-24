@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import img1 from '../assets/img/img1.jpg'; 
 import img2 from '../assets/img/img2.jpg'; 
 import img3 from '../assets/img/img3.jpg'; 
@@ -39,7 +39,11 @@ import img18small from '../assets/img-small/img18-small.jpg'
 
 import '../Styles/Photos.css'
 import { motion } from "framer-motion"
+
+import { CursorContext } from '../context/CursorContext';
 const Photos = () => {
+  const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
+
   const photosData = [
   
     { id: 11, src: img11small, fullSize: img11 },
@@ -95,7 +99,7 @@ const Photos = () => {
                 animate={{opacity: 1}}
                 exit={{opacity:0}}
                 transition={{ duration: 1 }}
-                loading='lazy' className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} />
+                loading='lazy' className='photo-item' src={photo.src} alt={`Photo ${photo.id}`} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}/>
               </div>
             ))}
       </div>
@@ -104,6 +108,7 @@ const Photos = () => {
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal">
           <motion.img 
+          onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 exit={{opacity:0}}

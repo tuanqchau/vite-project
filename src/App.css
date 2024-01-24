@@ -4,7 +4,18 @@
   text-align: center;
 }
 
-
+.cursor-context {
+  width: 32px;
+  height: 32px;
+  z-index: 50;
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 17 18 / var(--tw-bg-opacity));
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  border-radius: 9999px;
+  position: fixed;
+}
 
 
 
