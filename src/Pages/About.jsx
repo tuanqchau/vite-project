@@ -45,12 +45,6 @@ const About = () => {
                     </li>  
                 </ul>  
             </motion.div>
-            <div>
-                <p>hello this is tuan</p>
-            </div>
-            
-         
-         
         </div>
     );
 }
