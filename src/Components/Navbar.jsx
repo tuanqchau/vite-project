@@ -1,9 +1,9 @@
 import {Link} from 'react-router-dom'
 import '../Styles/Navbar.css'
 import React, { useState, useContext } from 'react';
-import { CursorContext } from '../context/CursorContext';
+//import { CursorContext } from '../context/CursorContext';
 const Navbar = () => {
-    const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
+    //const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
 
     return (
         <div className='navbar-container'>

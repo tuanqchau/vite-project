@@ -8,9 +8,9 @@ import {
 } from 'react-icons/im';
 import {motion} from 'framer-motion';
 
-import { CursorContext } from '../context/CursorContext';
+//import { CursorContext } from '../context/CursorContext';
 const About = () => {
-    const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
+    //const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
     
     return (
         <div className='profile-container'>
@@ -18,7 +18,9 @@ const About = () => {
             initial={{opacity: 0}}
             animate={{ opacity: 1 }}
             transition={{duration: 0.85}}
-            className='profile-pic' src={young_tuan} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}/>
+            className='profile-pic' src={young_tuan} 
+            //onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}
+            />
           
             <motion.div className='profile-info' 
                 initial={{opacity: 0}}
@@ -27,24 +29,29 @@ const About = () => {
                 <h2 className='name'>Tuan</h2>
                 <ul>
                     <li>
-                    <a onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank'>
+                    <a className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank'>
                         <ImInstagram className='icons'/> @tuanqchau_
                     </a>
                     </li>
 
                     <li>
-                    <a onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className="social-icons" href='https://github.com/tuanqchau' target='_blank'>
+                    <a  className="social-icons" href='https://github.com/tuanqchau' target='_blank'>
                         <ImGithub className='icons'/> tuanqchau
                     </a>
                     </li>
 
                     <li>
-                    <a onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
+                    <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
                         <ImLinkedin className='icons'/> Tuan Chau
                     </a>
                     </li>  
                 </ul>  
+                <p>
+                    
+                </p>
+                
             </motion.div>
+            
         </div>
     );
 }

@@ -6,9 +6,9 @@ import About from "./Pages/About";
 import Photos from './Pages/Photos';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
-import {CursorContext} from './context/CursorContext'
+//import {CursorContext} from './context/CursorContext'
 function App() {
-  const {cursorVariants, cursorBG} = useContext(CursorContext);
+  //const {cursorVariants, cursorBG} = useContext(CursorContext);
   return (
     <>
       <BrowserRouter>
@@ -22,9 +22,10 @@ function App() {
         </Routes>
       </BrowserRouter>
       
-      <motion.div
-        variants={cursorVariants}
-        animate={cursorBG} className='cursor-context'></motion.div>
+      {/* <motion.div
+        //variants={cursorVariants}
+        //</>animate={cursorBG} 
+        className='cursor-context'></motion.div> */}
     </>
     
   );

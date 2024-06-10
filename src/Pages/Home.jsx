@@ -2,9 +2,9 @@ import img8 from '../assets/img-small/img8-small.jpg'
 import '../Styles/Home.css'
 import { motion } from "framer-motion"
 import React, { useState, useContext } from 'react';
-import { CursorContext } from '../context/CursorContext';
+//import { CursorContext } from '../context/CursorContext';
 const Home = () => {
-    const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
+    //const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
     return (
         
         <div className='container'>
@@ -18,7 +18,9 @@ const Home = () => {
                 animate={{opacity: 1, y:0}}
                 exit={{opacity:0, y:'40%'}}
                 transition={{ duration: 0.85 }}
-                className='home-img' src={img8} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}/>
+                className='home-img' src={img8} 
+                //onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}
+                />
         </div>
     );
 }
