@@ -89,6 +89,13 @@ const Photos = () => {
   
 
   return (
+    <div className='gallery-container'>
+      <div className='album-titles'>
+        <p className='title-album'>All</p>
+        <p className='title-album'>Vietnam</p>
+      </div>
+
+      
     <div className='photo-grid-container'>
       
       <div className="photo-grid">
@@ -106,19 +113,21 @@ const Photos = () => {
             ))}
       </div>
 
-      {selectedPhoto && (
-        <div className="modal-overlay" onClick={handleCloseModal}>
-          <div className="modal">
-          <motion.img 
-          //onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                exit={{opacity:0}}
-                transition={{ duration: 1 }} src={selectedPhoto.fullSize} alt={`Full-size Photo ${selectedPhoto.id}`} />
+        {selectedPhoto && (
+          <div className="modal-overlay" onClick={handleCloseModal}>
+            <div className="modal">
+            <motion.img 
+            //onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}
+                  initial={{opacity: 0}}
+                  animate={{opacity: 1}}
+                  exit={{opacity:0}}
+                  transition={{ duration: 1 }} src={selectedPhoto.fullSize} alt={`Full-size Photo ${selectedPhoto.id}`} />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
+    
     
         
         
