@@ -67,7 +67,16 @@ const Photos = () => {
     
     // Add more photos as needed
   ];
+
+  const vietnamPhotos = [
+    {id: 11, src: img11small, fullSize: img11 },
+    { id: 11, src: img11small, fullSize: img11 },
+    { id: 12, src: img12small, fullSize: img12 },
+    { id: 13, src: img13small, fullSize: img13 },
+    { id: 14, src: img14small, fullSize: img14 },
+  ];
   const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [arrayOfPhotos, setSelectedArray] = useState(photosData);
 
   const handlePhotoClick = (photo) => {
     // Set the selected photo when clicked
@@ -86,20 +95,27 @@ const Photos = () => {
     }
   };
 
-  
+  const handleAlbumSelected = (e) => {
+    console.log(e.target.textContent)
+    if (e.target.textContent === 'All') {
+      setSelectedArray(photosData);
+    } else if (e.target.textContent === 'Vietnam') {
+      setSelectedArray(vietnamPhotos);
+    }
+  }
 
   return (
     <div className='gallery-container'>
       <div className='album-titles'>
-        <p className='title-album'>All</p>
-        <p className='title-album'>Vietnam</p>
+        <p className='title-album' onClick={handleAlbumSelected}>All</p>
+        <p className='title-album' onClick={handleAlbumSelected}>Vietnam</p>
       </div>
 
       
     <div className='photo-grid-container'>
       
       <div className="photo-grid">
-            {photosData.map((photo) => (
+            {arrayOfPhotos.map((photo) => (
               <div key={photo.id} className="photo" onClick={() => handlePhotoClick(photo)}>
                 <motion.img 
                 initial={{opacity: 0}}
