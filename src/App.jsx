@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import Photos from './Pages/Photos';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
+import Map from './Components/Map'
 //import {CursorContext} from './context/CursorContext'
 function App() {
   //const {cursorVariants, cursorBG} = useContext(CursorContext);
@@ -14,7 +15,8 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-            <Route index element={<Home />} />
+            <Route index element={<Map />} />
+            {/* <Route index element={<Home />} /> */}
             <Route path="home" element={<Home/>}/>
             <Route path="photos" element={<Photos />} />
             <Route path="about" element={<About/>} />
