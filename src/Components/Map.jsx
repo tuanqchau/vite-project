@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "../Styles/Map.css";
 import ImageGallery from "react-image-gallery";
@@ -40,21 +41,21 @@ const Map = () => {
 
   const handleHoiAnClick = (e) => {
     //console.log("Hoi An clicked");
-    setLocation("Hoi An"); 
+    setLocation("Hoi An");
   };
 
   const handleHanoiClick = (e) => {
     //console.log("Ha Noi clicked");
     setLocation("Ha Noi");
-  }
+  };
 
   const handleLocationChange = () => {
-    console.log('triggering')
+    console.log("triggering");
     if (location === "Hoi An") {
-        setPhotosData(hapics)
+      setPhotosData(hapics);
     } else if (location === "Da Nang") {
     } else if (location === "Ha Noi") {
-        setPhotosData(hnpics)
+      setPhotosData(hnpics);
     } else if (location === "Sai Gon") {
     } else if (location === "Ha Giang") {
     } else if (location === "Ninh Binh") {
@@ -80,14 +81,14 @@ const Map = () => {
           }
         />
 
-<Marker
+        <Marker
           position={hnpos}
           eventHandlers={{
             click: handleHanoiClick,
           }}
-          attribution="Ha Noi"
+          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
         >
-          <Popup>Ha Noi</Popup>
+          <Popup>Hà Nội</Popup>
         </Marker>
 
         <Marker
@@ -95,19 +96,17 @@ const Map = () => {
           eventHandlers={{
             click: handleHoiAnClick,
           }}
-          attribution="Hoi An"
+          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
         >
-          <Popup>Hoi An</Popup>
+          <Popup>Hội An</Popup>
         </Marker>
-
-        
-
       </MapContainer>
 
       <div className="photo-container">
-        <ImageGallery items={photosData}
-            showPlayButton={false}
-            showIndex={true}
+        <ImageGallery
+          items={photosData}
+          showPlayButton={false}
+          showIndex={true}
         />
       </div>
     </div>
