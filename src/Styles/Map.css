@@ -1,0 +1,10 @@
+.photo-container {
+    display: inline-block;
+    ;
+
+}
+.photo-item {
+    width: 50vw;
+    height: auto;
+    margin-left: 20px;
+}

@@ -69,7 +69,6 @@ const Photos = () => {
   ];
 
   const vietnamPhotos = [
-    {id: 11, src: img11small, fullSize: img11 },
     { id: 11, src: img11small, fullSize: img11 },
     { id: 12, src: img12small, fullSize: img12 },
     { id: 13, src: img13small, fullSize: img13 },
