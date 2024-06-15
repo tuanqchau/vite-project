@@ -128,13 +128,6 @@
 }*/
 
 
-
-
-
-.album-titles {
-  
-}
-
 .title-album {
   display: inline-block;
   margin: 0 30px 10px;
@@ -146,10 +139,6 @@
   text-decoration: underline;
   color: grey;
 }
-
-
-
-
 
 .modal {
   position: fixed;
