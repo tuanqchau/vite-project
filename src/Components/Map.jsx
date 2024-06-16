@@ -228,7 +228,17 @@ const Map = () => {
     { original: nb8, thumbnail: nb8 },
     { original: nb9, thumbnail: nb9 },
   ];
-  const hlpics = [];
+  const hlpics = [
+    { original: hl, thumbnail: hl},
+    { original: hl2, thumbnail:hl2 },
+    { original: hl3, thumbnail:hl3 },
+    { original: hl4, thumbnail:hl4 },
+    { original: hl5, thumbnail:hl5 },
+    { original: hl6, thumbnail:hl6 },
+    { original: hl7, thumbnail:hl7 },
+    { original: hl8, thumbnail:hl8 },
+    { original: hl9, thumbnail:hl9 },
+  ];
 
   const [location, setLocation] = useState("");
   const [photosData, setPhotosData] = useState(hapics);
