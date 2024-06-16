@@ -37,6 +37,7 @@ import img16small from '../assets/img-small/img16-small.jpg'
 import img17small from '../assets/img-small/img17-small.jpg'
 import img18small from '../assets/img-small/img18-small.jpg'
 
+
 import '../Styles/Photos.css'
 import { motion } from "framer-motion"
 
