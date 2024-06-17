@@ -406,7 +406,7 @@ const Map = () => {
 
       </MapContainer>
 
-      <div className="photo-container">
+      <div className="photo-thumbnails-container">
         <ImageGallery
           items={photosData}
           showPlayButton={false}

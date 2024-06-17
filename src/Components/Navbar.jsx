@@ -7,11 +7,14 @@ const Navbar = () => {
 
     return (
         <div className='navbar-container'>
-            <Link to={'/home'} className="nav-link"> 
+            {/* <Link to={'/home'} className="nav-link"> 
             Home
-            </Link>
+            </Link> */}
             <Link to={'/photos'} className="nav-link"> 
             Gallery
+            </Link>
+            <Link to={'/map'} className='nav-link'>
+            Map
             </Link>
             <Link to={'/about'} className="nav-link"> 
             About
