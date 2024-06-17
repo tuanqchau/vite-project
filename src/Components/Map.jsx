@@ -56,6 +56,7 @@ import hg27 from "../assets/vn/hg \(27\).jpg";
 import hg28 from "../assets/vn/hg \(28\).jpg";
 import hg29 from "../assets/vn/hg \(29\).jpg";
 import hg30 from "../assets/vn/hg \(30\).jpg";
+import hg31 from "../assets/vn/hg \(31\).jpg";
 
 import hl from "../assets/vn/hl.jpg";
 import hl2 from "../assets/vn/hl \(2\).jpg";
@@ -99,7 +100,7 @@ import nb5 from "../assets/vn/nb \(5\).jpg";
 import nb6 from "../assets/vn/nb \(6\).jpg";
 import nb7 from "../assets/vn/nb \(7\).jpg";
 import nb8 from "../assets/vn/nb \(8\).jpg";
-import nb9 from "../assets/vn/nb \(9\).jpg";
+  
 
 import sg from "../assets/vn/sg.jpg";
 import sg2 from "../assets/vn/sg \(2\).jpg";
@@ -176,6 +177,7 @@ const Map = () => {
     { original: hg28, thumbnail: hg28 },
     { original: hg29, thumbnail: hg29 },
     { original: hg30, thumbnail: hg30 },
+    { original: hg31, thumbnail: hg31 },
 
   ];
   const hnpics = [
@@ -226,7 +228,6 @@ const Map = () => {
     { original: nb6, thumbnail: nb6 },
     { original: nb7, thumbnail: nb7 },
     { original: nb8, thumbnail: nb8 },
-    { original: nb9, thumbnail: nb9 },
   ];
   const hlpics = [
     { original: hl, thumbnail: hl},
