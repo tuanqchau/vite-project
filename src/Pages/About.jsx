@@ -41,9 +41,9 @@ const About = () => {
                     </li>
 
                     <li>
-                    <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
+                    {/* <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
                         <ImLinkedin className='icons'/> Tuan Chau
-                    </a>
+                    </a> */}
                     </li>  
                 </ul>  
                 <p>
