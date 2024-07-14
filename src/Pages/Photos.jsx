@@ -152,7 +152,19 @@ const Photos = () => {
   //const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
 
   const photosData = [
-  
+    { id: 19, src: sg4, fullSize: sg4 },
+    { id: 20, src: sg7, fullSize: sg7 },
+    { id: 21, src: sg9, fullSize: sg9 },
+    { id: 22, src: sg10, fullSize: sg10 },
+    { id: 23, src: sg8, fullSize: sg8 },
+    { id: 24, src: sg11, fullSize: sg11 },
+    { id: 25, src: cr2, fullSize: cr2 },
+    { id: 26, src: cr, fullSize: cr },
+    { id: 27, src: dn2, fullSize: dn2 },
+    { id: 28, src: hn3, fullSize: hn3 },
+    { id: 29, src: hn5, fullSize: hn5 },
+    { id: 30, src: hn7, fullSize: hn7 },
+
     { id: 11, src: img11small, fullSize: img11 },
     { id: 12, src: img12small, fullSize: img12 },
     { id: 13, src: img13small, fullSize: img13 },
@@ -175,22 +187,22 @@ const Photos = () => {
     // Add more photos as needed
   ];
 
-  const vietnamPhotos = [
-    { id: 1, src: sg4, fullSize: sg4 },
-    { id: 2, src: sg7, fullSize: sg7 },
-    { id: 3, src: sg9, fullSize: sg9 },
-    { id: 4, src: sg10, fullSize: sg10 },
-    { id: 5, src: sg8, fullSize: sg8 },
-    { id: 6, src: sg11, fullSize: sg11 },
-    { id: 7, src: cr2, fullSize: cr2 },
-    { id: 8, src: cr, fullSize: cr },
-    { id: 9, src: dn2, fullSize: dn2 },
-    { id: 10, src: hn3, fullSize: hn3 },
-    { id: 11, src: hn5, fullSize: hn5 },
-    { id: 12, src: hn7, fullSize: hn7 },
-    // { id: 13, src: img13small, fullSize: img13 },
-    // { id: 14, src: img14small, fullSize: img14 },
-  ];
+  // const vietnamPhotos = [
+  //   { id: 1, src: sg4, fullSize: sg4 },
+  //   { id: 2, src: sg7, fullSize: sg7 },
+  //   { id: 3, src: sg9, fullSize: sg9 },
+  //   { id: 4, src: sg10, fullSize: sg10 },
+  //   { id: 5, src: sg8, fullSize: sg8 },
+  //   { id: 6, src: sg11, fullSize: sg11 },
+  //   { id: 7, src: cr2, fullSize: cr2 },
+  //   { id: 8, src: cr, fullSize: cr },
+  //   { id: 9, src: dn2, fullSize: dn2 },
+  //   { id: 10, src: hn3, fullSize: hn3 },
+  //   { id: 11, src: hn5, fullSize: hn5 },
+  //   { id: 12, src: hn7, fullSize: hn7 },
+  //   // { id: 13, src: img13small, fullSize: img13 },
+  //   // { id: 14, src: img14small, fullSize: img14 },
+  // ];
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [arrayOfPhotos, setSelectedArray] = useState(photosData);
 
@@ -222,10 +234,10 @@ const Photos = () => {
 
   return (
     <div className='gallery-container'>
-      <div className='album-titles'>
-        <p className='title-album' onClick={handleAlbumSelected}>All</p>
-        <p className='title-album' onClick={handleAlbumSelected}>Vietnam</p>
-      </div>
+      {/* <div className='album-titles'>
+        <p className='title-album item-1' onClick={handleAlbumSelected}>All</p>
+        <p className='title-album item-2' onClick={handleAlbumSelected}>Vietnam</p>
+      </div> */}
 
       
     <div className='photo-grid-container'>
