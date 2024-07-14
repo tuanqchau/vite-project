@@ -136,8 +136,9 @@
 }
 
 .title-album:hover {
-  text-decoration: underline;
+  transition: all 0.4 ease-in-out;
   color: grey;
+  cursor:pointer;
 }
 
 .modal {

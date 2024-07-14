@@ -1,7 +1,8 @@
 .navbar-container { 
     padding: 20px; 
     margin-bottom: 20px;
-    
+    display: flex;
+    justify-content: center;
   }
   
   .nav-link {
@@ -11,15 +12,12 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
     font-size: 20px;
-
-    /* --tw-text-opacity: 1;
-    color: rgb(105 108 109 / var(--tw-text-opacity));
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms; */
   }
   
   .nav-link:hover {
-    color:black;
+    color:rgb(127, 127, 127);
+    transition: all 0.1s ease-in-out;
+
   }
+
   
