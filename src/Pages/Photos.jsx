@@ -98,7 +98,7 @@ import hl7 from "../assets/vn/hl \(7\).jpg";
 import hl8 from "../assets/vn/hl \(8\).jpg";
 import hl9 from "../assets/vn/hl \(9\).jpg";
 
-import hn from "../assets/vn/hn.jpg";
+
 import hn2 from "../assets/vn/hn \(2\).jpg";
 import hn3 from "../assets/vn/hn \(3\).jpg";
 import hn4 from "../assets/vn/hn \(4\).jpg";

@@ -68,7 +68,7 @@ import hl7 from "../assets/vn/hl \(7\).jpg";
 import hl8 from "../assets/vn/hl \(8\).jpg";
 import hl9 from "../assets/vn/hl \(9\).jpg";
 
-import hn from "../assets/vn/hn.jpg";
+
 import hn2 from "../assets/vn/hn \(2\).jpg";
 import hn3 from "../assets/vn/hn \(3\).jpg";
 import hn4 from "../assets/vn/hn \(4\).jpg";
@@ -181,7 +181,6 @@ const Map = () => {
 
   ];
   const hnpics = [
-    { original: hn, thumbnail: hn },
     { original: hn2, thumbnail: hn2 },
     { original: hn3, thumbnail: hn3 },
     { original: hn4, thumbnail: hn4 },

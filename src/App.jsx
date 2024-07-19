@@ -19,12 +19,12 @@ function App() {
         <Routes>
             <Route index element={<Gallery/>} />
             {/* <Route index element={<Home />} /> */}
-            <Route path="gallery" element={<Gallery/>}/>
+            <Route path="home" element={<Gallery/>}/>
             <Route path="photos" element={<Photos />} />
             <Route path="map" element={<Map />} />
             <Route path="about" element={<About/>} />
-            <Route path="view" element={<ImageView />} />
-            <Route path="*" element={<Photos />} />
+            <Route path="view/:id" element={<ImageView />} />
+            <Route path="*" element={<Gallery />} />
             
         </Routes>
       </BrowserRouter>

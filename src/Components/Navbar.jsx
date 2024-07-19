@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <div className='navbar-container'>
-            { <Link to={'/gallery'} className="nav-link" style={{marginRight:"auto"}}> 
+            { <Link to={'/home'} className="nav-link" style={{marginRight:"auto"}}> 
             Tuan Chau
             </Link> }
             <Link to={'/photos'} className="nav-link"> 
