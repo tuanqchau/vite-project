@@ -31,6 +31,11 @@ import nyc2 from '../assets/img-small/img6-small.jpg'
 import nyc3 from '../assets/img-small/img7-small.jpg'
 import nyc4 from '../assets/img-small/img8-small.jpg'
 
+
+//az
+import az from '../assets/img-small/img2-small.jpg'
+import az2 from '../assets/img-small/img3-small.jpg'
+import az3 from '../assets/img-small/img4-small.jpg'
 const ImageView = ({imageData}) => {
   const { id } = useParams();
   const location = useLocation();
@@ -66,18 +71,28 @@ const ImageView = ({imageData}) => {
     { id: 3, src: nyc3 },
     { id: 4, src: nyc4 },
   ]
-    
-    useEffect(() => {
-      if (photo.title==='Vietnam') {
-        setPhotoList(vnPhotos)
-      }
-      else if (photo.title==='Washington') {
-        setPhotoList(washingtonPhotos)
-      }
-      else if (photo.title==='New York City') {
-        setPhotoList(nycPhotos)
-      }
-    },[])
+  
+  const azPhotos = [
+    { id: 1, src: az },
+    { id: 2, src: az2 },
+    { id: 3, src: az3 }
+  ]
+
+
+  useEffect(() => {
+    if (photo.title==='Vietnam') {
+      setPhotoList(vnPhotos)
+    }
+    else if (photo.title==='Washington') {
+      setPhotoList(washingtonPhotos)
+    }
+    else if (photo.title==='New York City') {
+      setPhotoList(nycPhotos)
+    }
+    else if (photo.title==='Arizona') {
+      setPhotoList(azPhotos)
+    }
+  },[])
     return (
       <div
         style={{
@@ -102,7 +117,8 @@ const ImageView = ({imageData}) => {
           )} */}
           {photosList.map((eachPhoto) =>(
             <img src={eachPhoto.src} alt={`Photo ${photo.id}`}
-             style={{marginBottom: "50px", maxWidth: "70%", height: "auto" }}/>
+             style={{marginBottom: "50px", maxWidth: "70%", height: "auto" }}
+             key={eachPhoto.id}/>
           ))}
       </div>
     )

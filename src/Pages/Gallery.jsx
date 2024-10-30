@@ -1,6 +1,7 @@
 import vn from "../assets/vn/dn (2).jpg";
 import ny from "../assets/img/img5.jpg";
 import wa from "../assets/img/img11.jpg";
+import az from "../assets/img-small/img2-small.jpg";
 import React, { useState, useContext } from "react";
 import "../Styles/Gallery.css";
 import { useNavigate } from 'react-router-dom';
@@ -11,7 +12,8 @@ const Gallery = () => {
   const photosData = [
     { id: 2, src: vn, title: "Vietnam", date: "May 2024" },
     { id: 3, src: wa, title: "Washington", date: "July 2023" },
-    { id: 1, src: ny, title: "New York City", date: "May 2022" },
+    { id: 1, src: ny, title: "New York City", date: "May 2022" }, 
+    { id: 4, src: az, title: "Arizona", date: "January 2022"}
   ];
 
   const handlePhotoHover = (photoId) => {
