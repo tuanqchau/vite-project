@@ -1,3 +1,7 @@
-.container {
-    
+.image-gallery {
+    max-height: 50vh;
+}
+.image {
+    max-height: 70vh;
+    width: auto;
 }

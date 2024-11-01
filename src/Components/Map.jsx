@@ -224,8 +224,8 @@ const Map = () => {
     { original: nb3, thumbnail: nb3 },
     { original: nb4, thumbnail: nb4 },
     { original: nb5, thumbnail: nb5 },
-    { original: nb6, thumbnail: nb6 },
-    { original: nb7, thumbnail: nb7 },
+    //{ original: nb6, thumbnail: nb6 },
+    //{ original: nb7, thumbnail: nb7 },
     { original: nb8, thumbnail: nb8 },
   ];
   const hlpics = [
@@ -310,11 +310,19 @@ const Map = () => {
   }, [location]);
 
   return (
-    <div className="container">
+    <div className="container" style={{display: "flex", alignItems: "flex-start"}}>
+      <div className="photo-thumbnails-container" style={{ marginRight: "10px", width: "50vw"}}>
+        <ImageGallery
+          items={photosData}
+          showPlayButton={false}
+          showIndex={true}
+        />
+      </div>
+      
       <MapContainer
         center={pos}
         zoom={6}
-        style={{ width: "75vw", height: "70vh", display: "inline-block" }}
+        style={{ width: "50vw", height: "80vh"}}
       >
         <TileLayer
           url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=bCJm1FRgtc2tZsmRppy7"
@@ -323,14 +331,14 @@ const Map = () => {
           }
         />
 
-<Marker
-          position={hgpos}
-          eventHandlers={{
-            click: handleHaGiangClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+        <Marker
+            position={hgpos}
+            eventHandlers={{
+              click: handleHaGiangClick,
+            }}
+            icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
         >
-          <Popup>Hà Giang</Popup>
+            <Popup>Hà Giang</Popup>
         </Marker>
 
         <Marker
@@ -405,13 +413,7 @@ const Map = () => {
 
       </MapContainer>
 
-      <div className="photo-thumbnails-container">
-        <ImageGallery
-          items={photosData}
-          showPlayButton={false}
-          showIndex={true}
-        />
-      </div>
+      
     </div>
   );
 };
