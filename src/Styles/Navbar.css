@@ -20,4 +20,10 @@
 
   }
 
+  /* Media query for screens 600px or smaller (phones) */
+@media (max-width: 600px) {
+  .nav-link {
+      font-size: 16px;  /* Smaller font size for phones */
+  }
+}
   
