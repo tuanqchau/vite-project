@@ -3,13 +3,17 @@ import ny from "../assets/img/img5.jpg";
 import wa from "../assets/img/img11.jpg";
 import az from "../assets/img-small/img2-small.jpg";
 import su25 from "../assets/summer25/WY-1.jpg";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Gallery.css";
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Gallery = () => {
   const navigate = useNavigate();
+  // const [isDarkMode, setIsDarkMode] = useState(
+  //   // Initialize state from local storage or default to false (light mode)
+  //   () => localStorage.getItem('theme') === 'dark' || false
+  // );
   const photosData = [
     { id: 2, src: vn, title: "Vietnam", date: "May 2024" },
     { id: 3, src: wa, title: "Washington", date: "July 2023" },
@@ -18,16 +22,27 @@ const Gallery = () => {
     { id: 5, src: su25, title: "Summer 2025", date: "August 2025" }
   ];
 
+  // useEffect(() => {
+  //   if (isDarkMode) {
+  //     document.body.classList.add('dark-mode');
+  //     localStorage.setItem('theme', 'dark');
+  //   } else {
+  //     document.body.classList.remove('dark-mode');
+  //     localStorage.setItem('theme', 'light');
+  //   }
+  // }, [isDarkMode]);
+
+  // // 👆 Toggle function
+  // const toggleDarkMode = () => {
+  //   setIsDarkMode(prevMode => !prevMode);
+  // };
+
   const handlePhotoClick = (photo) => {
     navigate(`/view/${photo.id}`, { state: { photo } })
   }
 
   return (
-    <div className="gallery-container">
-      {/* <div className="gallery-header">
-        <h1>Photo Gallery</h1>
-        <p>Explore my journey through these captured moments from around the world</p>
-      </div> */}
+    <div className="gallery-container">    
       <div className="gallery-grid">
         {photosData.map((photo, idx) => (
           <motion.div

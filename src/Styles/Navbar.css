@@ -2,14 +2,16 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 32px 32px 24px 32px;
+  padding: 32px 0px 24px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: none;
+  /* Use theme variables for background/shadows if applicable, but currently 'none' */
+  background: none; 
   border: none;
   box-shadow: none;
 }
+
 
 .navbar-brand {
   font-weight: 700;
@@ -18,6 +20,14 @@
   color: var(--brand);
   text-transform: uppercase;
   text-decoration: none;
+  /* Ensure a smooth color transition for dark mode swap */
+  transition: color var(--transition-speed); 
+}
+/* 🎯 NEW: Container for the nav links and the theme button */
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* This sets the gap between the nav links group and the button */
 }
 
 .nav-links {
@@ -35,10 +45,13 @@
   border-radius: 0;
   padding: 0;
   transition: color 0.15s;
+   /* Use theme variable for transition speed */
+  transition: color var(--transition-speed);
 }
 
 .nav-link:hover {
-  color: #222;
+  /* Update hover color to use theme variable for consistency */
+  color: var(--text-primary); 
   text-decoration: underline;
   background: none;
 }
@@ -48,7 +61,29 @@
   font-weight: 600;
   text-decoration: underline;
 }
+/* 🌙 NEW: Theme Toggle Button Styles */
+.theme-toggle-button {
+  /* No need for absolute positioning here, let the flex layout handle it */
+  padding: 8px 12px;
+  font-size: 1.1rem; /* Slightly larger for the emoji/icon */
+  line-height: 1; /* Keep the button compact */
+  cursor: pointer;
+  border-radius: 4px;
+  
+  /* Use theme variables for colors and borders */
+  border: 1px solid var(--text-secondary);
+  background: var(--background);
+  color: var(--text-primary);
+  
+  /* Ensure smooth transition for all theme swaps */
+  transition: all var(--transition-speed) ease; 
+}
 
+.theme-toggle-button:hover {
+  /* Hover effect to highlight the button */
+  background: var(--text-primary);
+  color: var(--background);
+}
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
