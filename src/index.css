@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --background: #f7f7f7;
+  --text-primary: #222;
+  --text-secondary: #666;
+  --brand: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
 #root {
-    /* justify-content: center;
-    align-items: center; */
+  min-height: 100vh;
+  background: var(--background);
 }
