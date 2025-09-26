@@ -13,45 +13,49 @@ const About = () => {
     //const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
     
     return (
-        <div className='profile-container'>
-          <motion.img 
-            initial={{opacity: 0}}
-            animate={{ opacity: 1 }}
-            transition={{duration: 0.85}}
-            className='profile-pic' src={young_tuan} 
-            //onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}
+        <div className='about-container page-transition'>
+          <div className='profile-container'>
+            <motion.img 
+              initial={{opacity: 0, scale: 0.8}}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{duration: 0.8, ease: "easeOut"}}
+              className='profile-pic' 
+              src={young_tuan} 
+              alt="Tuan Chau"
+              //onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}
             />
           
-            <motion.div className='profile-info' 
-                initial={{opacity: 0}}
-                animate={{ opacity: 1 }}
-                transition={{duration: 0.85}}> 
-                <h2 className='name'>Tuan</h2>
-                <ul>
-                    <li>
-                    <a className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank'>
-                        <ImInstagram className='icons'/> @tuanqchau_
-                    </a>
-                    </li>
+            <motion.div 
+              className='profile-info' 
+              initial={{opacity: 0, x: 30}}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{duration: 0.8, delay: 0.2, ease: "easeOut"}}
+            > 
+              <h2 className='name'>Tuan Chau</h2>
+              {/* <p>
+                Analog photographer and programmer.
+              </p> */}
+              <ul>
+                <li>
+                  <a className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank' rel="noopener noreferrer">
+                    <ImInstagram className='icons'/> @tuanqchau_
+                  </a>
+                </li>
 
-                    <li>
-                    <a  className="social-icons" href='https://github.com/tuanqchau' target='_blank'>
-                        <ImGithub className='icons'/> tuanqchau
-                    </a>
-                    </li>
+                <li>
+                  <a className="social-icons" href='https://github.com/tuanqchau' target='_blank' rel="noopener noreferrer">
+                    <ImGithub className='icons'/> tuanqchau
+                  </a>
+                </li>
 
-                    <li>
-                    {/* <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
-                        <ImLinkedin className='icons'/> Tuan Chau
-                    </a> */}
-                    </li>  
-                </ul>  
-                <p>
-                    
-                </p>
-                
+                <li>
+                  {/* <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
+                    <ImLinkedin className='icons'/> Tuan Chau
+                  </a> */}
+                </li>  
+              </ul>  
             </motion.div>
-            
+          </div>
         </div>
     );
 }
