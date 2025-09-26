@@ -37,8 +37,8 @@ const About = () => {
               </p> */}
               <ul>
                 <li>
-                  <a className="social-icons" href='http://www.instagram.com/tuanqchau_' target='_blank' rel="noopener noreferrer">
-                    <ImInstagram className='icons'/> @tuanqchau_
+                  <a className="social-icons" href='http://www.instagram.com/rawtuna35' target='_blank' rel="noopener noreferrer">
+                    <ImInstagram className='icons'/> @rawtuna35
                   </a>
                 </li>
 

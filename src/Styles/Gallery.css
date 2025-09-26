@@ -33,8 +33,13 @@
   box-shadow: none;
   background: #fff;
   display: block;
-}
 
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.gallery-front-container:hover img {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
 /* Remove overlay and hover effects */
 .overlay { display: none; }
 
