@@ -33,6 +33,8 @@
 .nav-links {
   display: flex;
   gap: 32px;
+  align-items: center; 
+
 }
 
 .nav-link {
@@ -61,29 +63,7 @@
   font-weight: 600;
   text-decoration: underline;
 }
-/* 🌙 NEW: Theme Toggle Button Styles */
-.theme-toggle-button {
-  /* No need for absolute positioning here, let the flex layout handle it */
-  padding: 8px 12px;
-  font-size: 1.1rem; /* Slightly larger for the emoji/icon */
-  line-height: 1; /* Keep the button compact */
-  cursor: pointer;
-  border-radius: 4px;
-  
-  /* Use theme variables for colors and borders */
-  border: 1px solid var(--text-secondary);
-  background: var(--background);
-  color: var(--text-primary);
-  
-  /* Ensure smooth transition for all theme swaps */
-  transition: all var(--transition-speed) ease; 
-}
 
-.theme-toggle-button:hover {
-  /* Hover effect to highlight the button */
-  background: var(--text-primary);
-  color: var(--background);
-}
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
