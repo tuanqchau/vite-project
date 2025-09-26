@@ -5,7 +5,18 @@
   --text-primary: #222;
   --text-secondary: #666;
   --brand: #222;
+  --image-bg-light: #fff; /* Use this to color the background behind images */
+  --transition-speed: 0.3s;
 }
+/* 🌙 DARK MODE OVERRIDES */
+body.dark-mode {
+  --background: #121212;   /* Dark background */
+  --text-primary: #f0f0f0; /* Light text */
+  --text-secondary: #a0a0a0; /* Lighter secondary text */
+  --brand: #f0f0f0;        /* Light brand color */
+  --image-bg-light: #1f1f1f;
+}
+
 
 * {
   margin: 0;
@@ -18,9 +29,21 @@ body {
   background: var(--background);
   color: var(--text-primary);
   min-height: 100vh;
+  /* Add transition for a smooth theme switch */
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease; 
 }
 
 #root {
   min-height: 100vh;
-  background: var(--background);
+  /* Use transparent or inherit background for #root to ensure body color shows through */
+  background: transparent; 
+}
+
+/* Ensure the gallery header uses the brand color for thematic consistency */
+.gallery-header h1 {
+  color: var(--brand);
+}
+/* Ensure secondary text also changes */
+.gallery-header p {
+  color: var(--text-secondary);
 }

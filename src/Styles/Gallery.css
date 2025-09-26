@@ -34,11 +34,13 @@
   background: #fff;
   display: block;
 
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
+
 .gallery-front-container:hover img {
   transform: scale(1.03);
-  filter: brightness(1.1);
+  /* filter: brightness(1.1); */
+  filter: grayscale(100%);
 }
 /* Remove overlay and hover effects */
 .overlay { display: none; }
@@ -65,6 +67,7 @@
   max-width: 600px;
   margin: 0;
 }
+
 
 @media (max-width: 900px) {
   .gallery-grid {
