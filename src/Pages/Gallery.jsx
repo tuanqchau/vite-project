@@ -6,8 +6,8 @@ import su25 from "../assets/summer25/WY-1.jpg";
 import React, { useState, useEffect } from "react";
 import "../Styles/Gallery.css";
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-
+import { motion, AnimatePresence  } from 'framer-motion';
+import Arrow from "../Components/Arrow";
 const Gallery = () => {
   const navigate = useNavigate();
   // const [isDarkMode, setIsDarkMode] = useState(
@@ -21,7 +21,23 @@ const Gallery = () => {
     { id: 4, src: az, title: "Arizona", date: "January 2022"},
     { id: 5, src: su25, title: "Summer 2025", date: "August 2025" }
   ];
+  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(null); // null means no photo is open
 
+  const openLightbox = (index) => {
+    setCurrentPhotoIndex(index);
+  };
+
+  const closeLightbox = () => {
+    setCurrentPhotoIndex(null);
+  };
+
+  const showPrev = () => {
+    setCurrentPhotoIndex((prev) => (prev === 0 ? photosData.length - 1 : prev - 1));
+  };
+
+  const showNext = () => {
+    setCurrentPhotoIndex((prev) => (prev === photosData.length - 1 ? 0 : prev + 1));
+  };
   // useEffect(() => {
   //   if (isDarkMode) {
   //     document.body.classList.add('dark-mode');
@@ -37,18 +53,19 @@ const Gallery = () => {
   //   setIsDarkMode(prevMode => !prevMode);
   // };
 
-  const handlePhotoClick = (photo) => {
-    navigate(`/view/${photo.id}`, { state: { photo } })
-  }
+  // const handlePhotoClick = (photo) => {
+  //   navigate(`/view/${photo.id}`, { state: { photo } })
+  // }
 
   return (
-    <div className="gallery-container">    
+    <div className="gallery-container">   
+      
       <div className="gallery-grid">
         {photosData.map((photo, idx) => (
           <motion.div
             key={photo.id}
             className="gallery-front-container"
-            onClick={() => handlePhotoClick(photo)}
+            onClick={() => openLightbox(idx)}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ amount: 0.3 }}
@@ -61,6 +78,42 @@ const Gallery = () => {
           </motion.div>
         ))}
       </div>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {currentPhotoIndex !== null && (
+          <motion.div
+            className="lightbox-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.img
+              key={photosData[currentPhotoIndex].id}
+              src={photosData[currentPhotoIndex].src}
+              alt={photosData[currentPhotoIndex].title}
+              className="lightbox-image"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              transition={{ duration: 0.3 }}
+            />
+
+            <span className="close-btn" onClick={closeLightbox}>
+              ×
+            </span>
+            {/* <span className="prev-btn" onClick={showPrev}>
+              ‹
+            </span>
+            <span className="next-btn" onClick={showNext}>
+              ›
+            </span> */}
+            <Arrow direction="left" onClick={showPrev} />
+            <Arrow direction="right" onClick={showNext} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
     </div>
   );
 };
