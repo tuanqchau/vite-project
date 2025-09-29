@@ -1,16 +1,74 @@
-.gallery-container {
-  padding: 40px 0 0 0;
-  max-width: 1400px;
-  margin: 0 auto;
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
-.gallery-grid {
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #666;
+  cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.close-btn:hover {
+  color: white;         
+  transform: rotate(90deg);  /* spin slightly */
+}
+
+.prev-btn, .next-btn {
+  position: fixed;
+  top: 50%;
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1001;
+  transform: translateY(-50%);
+}
+
+.prev-btn { left: 30px; }
+.next-btn { right: 30px; }
+
+@media (max-width: 768px) {
+  .prev-btn, .next-btn { font-size: 40px; }
+  .close-btn { font-size: 30px; }
+}
+
+
+.gallery-container {
+  padding: 40px 0 0 0;
+  max-width: 95%;
+  margin: 0 auto;
+  overflow: visible;
+  position: relative;
+}
+
+
+/* .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+
   gap: 48px 32px;
   margin-top: 0;
 }
-
 .gallery-front-container {
   background: none;
   border: none;
@@ -35,8 +93,26 @@
   display: block;
 
   transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+} */
+.gallery-grid {
+  column-count: 3;   /* number of columns */
+  column-gap: 50px;
+  gap: 65px; /* gap between items */
 }
 
+.gallery-front-container {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 65px; /* vertical gap */
+  overflow: hidden;
+}
+
+.gallery-front-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
 .gallery-front-container:hover img {
   transform: scale(1.03);
   /* filter: brightness(1.1); */
