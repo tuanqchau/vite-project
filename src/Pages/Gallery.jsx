@@ -21,7 +21,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence  } from 'framer-motion';
 import Arrow from "../Components/Arrow";
 import Masonry from "react-masonry-css";
-
+import Footer from "../Components/Footer";
 const Gallery = () => {
 
     // Define how many columns for different screen sizes
@@ -199,6 +199,8 @@ const Gallery = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <Footer />
     </div>
   );
 };

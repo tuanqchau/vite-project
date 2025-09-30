@@ -7,13 +7,15 @@ import {
   ImLinkedin,
 } from 'react-icons/im';
 import {motion} from 'framer-motion';
-
+import Socials from '../Components/Socials';
+import Footer from '../Components/Footer';
 //import { CursorContext } from '../context/CursorContext';
 const About = () => {
     //const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext);
     
     return (
-        <div className='about-container page-transition'>
+      <>
+<div className='about-container page-transition'>
           <div className='profile-container'>
             <motion.img 
               initial={{opacity: 0, scale: 0.8}}
@@ -32,10 +34,9 @@ const About = () => {
               transition={{duration: 0.8, delay: 0.2, ease: "easeOut"}}
             > 
               <h2 className='name'>Tuan Chau</h2>
-              {/* <p>
-                Analog photographer and programmer.
-              </p> */}
-              <ul>
+              <p>i like 35mm film and coffee</p>
+              <Socials />
+              {/* <ul>
                 <li>
                   <a className="social-icons" href='http://www.instagram.com/rawtuna35' target='_blank' rel="noopener noreferrer">
                     <ImInstagram className='icons'/> @rawtuna35
@@ -49,14 +50,20 @@ const About = () => {
                 </li>
 
                 <li>
-                  {/* <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
+                  <a className="social-icons" href='https://www.linkedin.com/in/tuan-chau-5566ba1b4/' target='_blank'>
                     <ImLinkedin className='icons'/> Tuan Chau
-                  </a> */}
+                  </a>
                 </li>  
-              </ul>  
+              </ul>   */}
             </motion.div>
+
+            
           </div>
+          
         </div>
+      <Footer />
+      </>
+        
     );
 }
 
