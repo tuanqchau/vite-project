@@ -17,9 +17,9 @@ const Navbar = () => {
             {/* 🎯 Wrap links and switch in the new .nav-group */}
             <div className="nav-group"> 
                 <div className="nav-links">
-                    <Link to={'/photos'} className="nav-link"> 
+                    {/* <Link to={'/photos'} className="nav-link"> 
                         Gallery
-                    </Link>
+                    </Link> */}
                     <Link to={'/about'} className="nav-link"> 
                         About
                     </Link>

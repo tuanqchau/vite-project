@@ -113,13 +113,14 @@
 }
 
 .gallery-masonry-column {
-  padding-left: 20px; /* gutter size */
+  padding-left: 30px; /* gutter size */
   background-clip: padding-box;
 }
+
 .gallery-front-container {
   display: inline-block;
   width: 100%;
-  margin-bottom: 65px; /* vertical gap */
+  margin-bottom: 50px; /* vertical gap */
   overflow: hidden;
 }
 
