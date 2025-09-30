@@ -25,7 +25,7 @@
 
 .profile-container:hover {
   box-shadow: var(--shadow-hover);
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
 }
 
 .profile-pic {

@@ -45,13 +45,14 @@ const Gallery = () => {
     { id: 7, src: wy3, title: "Wyoming 3", date: "August 2025" },
     //{ id: 8, src: wy4, title: "Wyoming 4", date: "August 2025" },
     { id: 9, src: mt1, title: "Montana 1", date: "August 2025" },
-    { id: 10, src: mt2, title: "Montana 2", date: "August 2025" },
     { id: 11, src: mt3, title: "Montana 3", date: "August 2025" },
+    { id: 10, src: mt2, title: "Montana 2", date: "August 2025" },
     { id: 12, src: mt4, title: "Montana 4", date: "August 2025" },
     { id: 13, src: wa2, title: "Washington 2", date: "July 2023" },
+    { id: 16, src: az2, title: "Arizona 2", date: "January 2022" },
     { id: 14, src: ny2, title: "New York City 2", date: "May 2022" },
     { id: 15, src: ny3, title: "New York City 3", date: "May 2022" },
-    { id: 16, src: az2, title: "Arizona 2", date: "January 2022" },
+    
   ];
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(null); // null means no photo is open
 
@@ -161,10 +162,10 @@ const Gallery = () => {
             key={photo.id}
             className="gallery-front-container"
             onClick={() => openLightbox(idx)}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ amount: 0.3 }}
-            transition={{ duration: 0.7, delay: idx * 0.1, ease: "easeOut" }}
+            // initial={{ opacity: 1, y: 20 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // viewport={{ amount: 0.3 }}
+            // transition={{ duration: 0.7, delay: idx * 0.1, ease: "easeOut" }}
           >
             <img src={photo.src} alt={`Photo ${photo.id}`} />
           </motion.div>
