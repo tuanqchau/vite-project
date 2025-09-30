@@ -36,6 +36,10 @@
   /* Ensure a smooth color transition for dark mode swap */
   transition: color var(--transition-speed); 
 }
+.navbar-brand:hover {
+  color: var(--text-secondary);
+}
+
 /* 🎯 NEW: Container for the nav links and the theme button */
 .nav-group {
     display: flex;
@@ -52,6 +56,7 @@
 
 .nav-link {
   color: var(--text-secondary);
+  position:relative;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
@@ -63,14 +68,24 @@
    /* Use theme variable for transition speed */
   transition: color var(--transition-speed);
 }
-
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; 
+  left: 50%;
+  width: 0;
+  height: 2px; 
+  background-color: var(--text-secondary);
+  transition: width 0.3s ease, left 0.3s ease;
+}
 .nav-link:hover {
   /* Update hover color to use theme variable for consistency */
-  color: var(--text-primary); 
-  text-decoration: underline;
-  background: none;
+  color: var(--text-secondary); 
 }
-
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
 .nav-link.active {
   color: var(--brand);
   font-weight: 600;
