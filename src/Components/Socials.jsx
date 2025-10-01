@@ -65,6 +65,7 @@ const Socials = () => {
                 width="22px"        // match your other icons
                 viewBox="0 0 382 382"
                 xmlns="http://www.w3.org/2000/svg"
+                className="btn-svg"
             >
                 <path
                 fill="#fff"
