@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <div className="contact-container">
-      <h2 className="contact-title">Contact Me</h2>
+      <h2 className="contact-title">Send Me a Message</h2>
 
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="form-group">
