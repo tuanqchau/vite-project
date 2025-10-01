@@ -7,6 +7,10 @@
   --brand: #222;
   --image-bg-light: #fff; /* Use this to color the background behind images */
   --transition-speed: 0.3s;
+  /* Input border colors for light mode */
+
+  --input-border: rgba(0, 0, 0, 0.3); 
+  --input-focus: #6a6a6a;
 }
 /* 🌙 DARK MODE OVERRIDES */
 body.dark-mode {
@@ -15,6 +19,10 @@ body.dark-mode {
   --text-secondary: #a0a0a0; /* Lighter secondary text */
   --brand: #f0f0f0;        /* Light brand color */
   --image-bg-light: #1f1f1f;
+
+  /* Input border colors for dark mode */
+  --input-border: rgba(255, 255, 255, 0.4);
+  --input-focus: rgba(255, 255, 255, 0.8);
 }
 
 

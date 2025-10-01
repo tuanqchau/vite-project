@@ -23,6 +23,9 @@ const Navbar = () => {
                     <Link to={'/about'} className="nav-link"> 
                         About
                     </Link>
+                    <Link to={'/contact'} className="nav-link"> 
+                        Contact
+                    </Link>
                 </div>
 
                 {/* ✅ Use the custom Switch component instead of the button */}
