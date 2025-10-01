@@ -1,0 +1,79 @@
+.contact-container {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: var(--bg-primary);
+  /* border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); */
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+/* Makes each label + input a neat row */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--input-border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  background-color: transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 2.5px var(--input-focus); /* subtle glow effect */
+  outline: none;
+}
+
+
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 0.9rem;
+  background: var(--accent, #4f46e5);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: var(--accent-hover, #4338ca);
+  transform: translateY(-2px);
+}
+
+.contact-form button:active {
+  transform: scale(0.97);
+}
