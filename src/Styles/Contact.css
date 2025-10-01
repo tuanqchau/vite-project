@@ -12,6 +12,7 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
+  font-family: "Courier New", Courier, monospace;
 }
 /* Makes each label + input a neat row */
 .form-group {
