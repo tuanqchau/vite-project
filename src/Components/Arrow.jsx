@@ -17,85 +17,103 @@ const StyledWrapper = styled.div`
   position: fixed;
   top: 50%;
   z-index: 1001;
-
-  ${(props) =>
-    props.direction === "left"
-      ? css`left: 2vw;`
-      : css`right: 2vw;`}
   transform: translateY(-50%);
 
+  /* Position arrows close to edges */
+  ${(props) =>
+    props.direction === "left"
+      ? `left: 5px;` // very close to left edge
+      : `right: 5px;`} // very close to right edge
+
   .arrow {
-  cursor: pointer;
-  height: 60px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  transition: transform 0.1s;
-  width: 50px;
-}
+    height: 50px;
+    width: 40px;
+    position: relative;
+    transform: none; /* remove translateX(-50%) */
+    transition: transform 0.1s;
 
-.arrow-top, .arrow-bottom {
-  background-color: #666;
-  height: 4px;
-  left: -5px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-}
+    @media (max-width: 768px) {
+      height: 35px;
+      width: 25px;
+    }
 
-.arrow-top:after, .arrow-bottom:after {
-  background-color: #fff;
-  content: "";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  transition: all 0.15s;
-}
-/* Left arrow */
-.arrow-top.left {
-  transform: rotate(-45deg);
-  transform-origin: bottom left;
-}
+    @media (max-width: 480px) {
+      height: 25px;
+      width: 20px;
+    }
+  }
 
-.arrow-bottom.left {
-  transform: rotate(45deg);
-  transform-origin: top left;
-}
-.arrow-top {
-  transform: rotate(45deg);
-  transform-origin: bottom right;
-}
+  .arrow-top,
+  .arrow-bottom {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #666;
 
-.arrow-top:after {
-  left: 100%;
-  right: 0;
-  transition-delay: 0s;
-}
+    @media (max-width: 768px) {
+      height: 3px;
+    }
 
-.arrow-bottom {
-  transform: rotate(-45deg);
-  transform-origin: top right;
-}
+    @media (max-width: 480px) {
+      height: 2px;
+    }
+  }
 
-.arrow-bottom:after {
-  left: 0;
-  right: 100%;
-  transition-delay: 0.15s;
-}
+  /* Arrow rotations */
+  .arrow-top.left {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+  }
+  .arrow-bottom.left {
+    transform: rotate(45deg);
+    transform-origin: top left;
+  }
 
-.arrow:hover .arrow-top:after {
-  left: 0;
-  transition-delay: 0.15s;
-}
+  .arrow-top.right {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  .arrow-bottom.right {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
 
-.arrow:hover .arrow-bottom:after {
-  right: 0;
-  transition-delay: 0s;
-}
+  /* Hover effects */
+  .arrow-top:after,
+  .arrow-bottom:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.15s;
+  }
 
-.arrow:active {
-  transform: translateX(-50%) translateY(-50%) scale(0.9);
-}`;
+  .arrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+  }
+  .arrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+  }
+
+  .arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+  }
+  .arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+  }
+
+  .arrow:active {
+    transform: scale(0.9);
+  }
+`;
+
 
 export default Arrow;
