@@ -23,7 +23,17 @@ import Arrow from "../Components/Arrow";
 import Masonry from "react-masonry-css";
 import Footer from "../Components/Footer";
 const Gallery = () => {
-
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      // Enter fullscreen
+      document.documentElement.requestFullscreen().catch((err) => {
+        console.error(`Error attempting fullscreen: ${err.message}`);
+      });
+    } else {
+      // Exit fullscreen
+      document.exitFullscreen();
+    }
+  };
     // Define how many columns for different screen sizes
   const breakpointColumnsObj = {
     default: 3,
@@ -71,84 +81,7 @@ const Gallery = () => {
   const showNext = () => {
     setCurrentPhotoIndex((prev) => (prev === photosData.length - 1 ? 0 : prev + 1));
   };
-  // useEffect(() => {
-  //   if (isDarkMode) {
-  //     document.body.classList.add('dark-mode');
-  //     localStorage.setItem('theme', 'dark');
-  //   } else {
-  //     document.body.classList.remove('dark-mode');
-  //     localStorage.setItem('theme', 'light');
-  //   }
-  // }, [isDarkMode]);
 
-  // // 👆 Toggle function
-  // const toggleDarkMode = () => {
-  //   setIsDarkMode(prevMode => !prevMode);
-  // };
-
-  // const handlePhotoClick = (photo) => {
-  //   navigate(`/view/${photo.id}`, { state: { photo } })
-  // }
-
-  // return (
-  //   <div className="gallery-container">   
-      
-  //     <div className="gallery-grid">
-  //       {photosData.map((photo, idx) => (
-  //         <motion.div
-  //           key={photo.id}
-  //           className="gallery-front-container"
-  //           onClick={() => openLightbox(idx)}
-  //           initial={{ opacity: 0, y: 40 }}
-  //           whileInView={{ opacity: 1, y: 0 }}
-  //           viewport={{ amount: 0.3 }}
-  //           transition={{ duration: 0.7, delay: idx * 0.1, ease: 'easeOut' }}
-  //         >
-  //           <img
-  //             src={photo.src}
-  //             alt={`Photo ${photo.id}`}
-  //           />
-  //         </motion.div>
-  //       ))}
-  //     </div>
-
-  //     {/* Lightbox */}
-  //     <AnimatePresence>
-  //       {currentPhotoIndex !== null && (
-  //         <motion.div
-  //           className="lightbox-overlay"
-  //           initial={{ opacity: 0 }}
-  //           animate={{ opacity: 1 }}
-  //           exit={{ opacity: 0 }}
-  //         >
-  //           <motion.img
-  //             key={photosData[currentPhotoIndex].id}
-  //             src={photosData[currentPhotoIndex].src}
-  //             alt={photosData[currentPhotoIndex].title}
-  //             className="lightbox-image"
-  //             initial={{ scale: 0.8 }}
-  //             animate={{ scale: 1 }}
-  //             exit={{ scale: 0.8 }}
-  //             transition={{ duration: 0.3 }}
-  //           />
-
-  //           <span className="close-btn" onClick={closeLightbox}>
-  //             ×
-  //           </span>
-  //           {/* <span className="prev-btn" onClick={showPrev}>
-  //             ‹
-  //           </span>
-  //           <span className="next-btn" onClick={showNext}>
-  //             ›
-  //           </span> */}
-  //           <Arrow direction="left" onClick={showPrev} />
-  //           <Arrow direction="right" onClick={showNext} />
-  //         </motion.div>
-  //       )}
-  //     </AnimatePresence>
-
-  //   </div>
-  // );
   return (
     <div className="gallery-container">
       {/* Masonry Layout */}
