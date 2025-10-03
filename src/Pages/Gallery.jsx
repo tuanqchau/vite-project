@@ -23,17 +23,7 @@ import Arrow from "../Components/Arrow";
 import Masonry from "react-masonry-css";
 import Footer from "../Components/Footer";
 const Gallery = () => {
-  const toggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      // Enter fullscreen
-      document.documentElement.requestFullscreen().catch((err) => {
-        console.error(`Error attempting fullscreen: ${err.message}`);
-      });
-    } else {
-      // Exit fullscreen
-      document.exitFullscreen();
-    }
-  };
+  
     // Define how many columns for different screen sizes
   const breakpointColumnsObj = {
     default: 3,
