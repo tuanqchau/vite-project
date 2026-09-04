@@ -8,111 +8,110 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 import cr from "../assets/vn/cr.jpg";
-import cr2 from "../assets/vn/cr \(2\).jpg";
-import cr3 from "../assets/vn/cr \(3\).jpg";
+import cr2 from "../assets/vn/cr (2).jpg";
+import cr3 from "../assets/vn/cr (3).jpg";
 
 import dn from "../assets/vn/dn.jpg"
-import dn2 from "../assets/vn/dn \(2\).jpg"
-import dn3 from "../assets/vn/dn \(3\).jpg"
+import dn2 from "../assets/vn/dn (2).jpg"
+import dn3 from "../assets/vn/dn (3).jpg"
 
 import ha from "../assets/vn/ha.jpg";
-import ha2 from "../assets/vn/ha \(2\).jpg";
-import ha3 from "../assets/vn/ha \(3\).jpg";
-import ha4 from "../assets/vn/ha \(4\).jpg";
-import ha5 from "../assets/vn/ha \(5\).jpg";
-import ha6 from "../assets/vn/ha \(6\).jpg";
-import ha7 from "../assets/vn/ha \(7\).jpg";
-import ha8 from "../assets/vn/ha \(8\).jpg";
-import ha9 from "../assets/vn/ha \(9\).jpg";
-import ha10 from "../assets/vn/ha \(10\).jpg";
+import ha2 from "../assets/vn/ha (2).jpg";
+import ha3 from "../assets/vn/ha (3).jpg";
+import ha4 from "../assets/vn/ha (4).jpg";
+import ha5 from "../assets/vn/ha (5).jpg";
+import ha6 from "../assets/vn/ha (6).jpg";
+import ha7 from "../assets/vn/ha (7).jpg";
+import ha8 from "../assets/vn/ha (8).jpg";
+import ha9 from "../assets/vn/ha (9).jpg";
+import ha10 from "../assets/vn/ha (10).jpg";
 
 import hg from "../assets/vn/hg.jpg";
-import hg2 from "../assets/vn/hg \(2\).jpg";
-import hg3 from "../assets/vn/hg \(3\).jpg";
-import hg4 from "../assets/vn/hg \(4\).jpg";
-import hg5 from "../assets/vn/hg \(5\).jpg";
-import hg6 from "../assets/vn/hg \(6\).jpg";
-import hg7 from "../assets/vn/hg \(7\).jpg";
-import hg8 from "../assets/vn/hg \(8\).jpg";
-import hg9 from "../assets/vn/hg \(9\).jpg";
-import hg10 from "../assets/vn/hg \(10\).jpg";
-import hg11 from "../assets/vn/hg \(11\).jpg";
-import hg12 from "../assets/vn/hg \(12\).jpg";
-import hg13 from "../assets/vn/hg \(13\).jpg";
-import hg14 from "../assets/vn/hg \(14\).jpg";
-import hg15 from "../assets/vn/hg \(15\).jpg";
-import hg16 from "../assets/vn/hg \(16\).jpg";
-import hg17 from "../assets/vn/hg \(17\).jpg";
-import hg18 from "../assets/vn/hg \(18\).jpg";
-import hg19 from "../assets/vn/hg \(19\).jpg";
-import hg20 from "../assets/vn/hg \(20\).jpg";
-import hg21 from "../assets/vn/hg \(21\).jpg";
-import hg22 from "../assets/vn/hg \(22\).jpg";
-import hg23 from "../assets/vn/hg \(23\).jpg";
-import hg24 from "../assets/vn/hg \(24\).jpg";
-import hg25 from "../assets/vn/hg \(25\).jpg";
-import hg26 from "../assets/vn/hg \(26\).jpg";
-import hg27 from "../assets/vn/hg \(27\).jpg";
-import hg28 from "../assets/vn/hg \(28\).jpg";
-import hg29 from "../assets/vn/hg \(29\).jpg";
-import hg30 from "../assets/vn/hg \(30\).jpg";
-import hg31 from "../assets/vn/hg \(31\).jpg";
+import hg2 from "../assets/vn/hg (2).jpg";
+import hg3 from "../assets/vn/hg (3).jpg";
+import hg4 from "../assets/vn/hg (4).jpg";
+import hg5 from "../assets/vn/hg (5).jpg";
+import hg6 from "../assets/vn/hg (6).jpg";
+import hg7 from "../assets/vn/hg (7).jpg";
+import hg8 from "../assets/vn/hg (8).jpg";
+import hg9 from "../assets/vn/hg (9).jpg";
+import hg10 from "../assets/vn/hg (10).jpg";
+import hg11 from "../assets/vn/hg (11).jpg";
+import hg12 from "../assets/vn/hg (12).jpg";
+import hg13 from "../assets/vn/hg (13).jpg";
+import hg14 from "../assets/vn/hg (14).jpg";
+import hg15 from "../assets/vn/hg (15).jpg";
+import hg16 from "../assets/vn/hg (16).jpg";
+import hg17 from "../assets/vn/hg (17).jpg";
+import hg18 from "../assets/vn/hg (18).jpg";
+import hg19 from "../assets/vn/hg (19).jpg";
+import hg20 from "../assets/vn/hg (20).jpg";
+import hg21 from "../assets/vn/hg (21).jpg";
+import hg22 from "../assets/vn/hg (22).jpg";
+import hg23 from "../assets/vn/hg (23).jpg";
+import hg24 from "../assets/vn/hg (24).jpg";
+import hg25 from "../assets/vn/hg (25).jpg";
+import hg26 from "../assets/vn/hg (26).jpg";
+import hg27 from "../assets/vn/hg (27).jpg";
+import hg28 from "../assets/vn/hg (28).jpg";
+import hg29 from "../assets/vn/hg (29).jpg";
+import hg30 from "../assets/vn/hg (30).jpg";
+import hg31 from "../assets/vn/hg (31).jpg";
 
 import hl from "../assets/vn/hl.jpg";
-import hl2 from "../assets/vn/hl \(2\).jpg";
-import hl3 from "../assets/vn/hl \(3\).jpg";
-import hl4 from "../assets/vn/hl \(4\).jpg";
-import hl5 from "../assets/vn/hl \(5\).jpg";
-import hl6 from "../assets/vn/hl \(6\).jpg";
-import hl7 from "../assets/vn/hl \(7\).jpg";
-import hl8 from "../assets/vn/hl \(8\).jpg";
-import hl9 from "../assets/vn/hl \(9\).jpg";
+import hl2 from "../assets/vn/hl (2).jpg";
+import hl3 from "../assets/vn/hl (3).jpg";
+import hl4 from "../assets/vn/hl (4).jpg";
+import hl5 from "../assets/vn/hl (5).jpg";
+import hl6 from "../assets/vn/hl (6).jpg";
+import hl7 from "../assets/vn/hl (7).jpg";
+import hl8 from "../assets/vn/hl (8).jpg";
+import hl9 from "../assets/vn/hl (9).jpg";
 
-
-import hn2 from "../assets/vn/hn \(2\).jpg";
-import hn3 from "../assets/vn/hn \(3\).jpg";
-import hn4 from "../assets/vn/hn \(4\).jpg";
-import hn5 from "../assets/vn/hn \(5\).jpg";
-import hn6 from "../assets/vn/hn \(6\).jpg";
-import hn7 from "../assets/vn/hn \(7\).jpg";
-import hn8 from "../assets/vn/hn \(8\).jpg";
-import hn9 from "../assets/vn/hn \(9\).jpg";
-import hn10 from "../assets/vn/hn \(10\).jpg";
-import hn11 from "../assets/vn/hn \(11\).jpg";
-import hn12 from "../assets/vn/hn \(12\).jpg";
-import hn13 from "../assets/vn/hn \(13\).jpg";
-import hn14 from "../assets/vn/hn \(14\).jpg";
-import hn15 from "../assets/vn/hn \(15\).jpg";
-import hn16 from "../assets/vn/hn \(16\).jpg";
-import hn17 from "../assets/vn/hn \(17\).jpg";
-import hn18 from "../assets/vn/hn \(18\).jpg";
-import hn19 from "../assets/vn/hn \(19\).jpg";
-import hn20 from "../assets/vn/hn \(20\).jpg";
-import hn21 from "../assets/vn/hn \(21\).jpg";
-import hn22 from "../assets/vn/hn \(22\).jpg";
-import hn23 from "../assets/vn/hn \(23\).jpg";
+import hn2 from "../assets/vn/hn (2).jpg";
+import hn3 from "../assets/vn/hn (3).jpg";
+import hn4 from "../assets/vn/hn (4).jpg";
+import hn5 from "../assets/vn/hn (5).jpg";
+import hn6 from "../assets/vn/hn (6).jpg";
+import hn7 from "../assets/vn/hn (7).jpg";
+import hn8 from "../assets/vn/hn (8).jpg";
+import hn9 from "../assets/vn/hn (9).jpg";
+import hn10 from "../assets/vn/hn (10).jpg";
+import hn11 from "../assets/vn/hn (11).jpg";
+import hn12 from "../assets/vn/hn (12).jpg";
+import hn13 from "../assets/vn/hn (13).jpg";
+import hn14 from "../assets/vn/hn (14).jpg";
+import hn15 from "../assets/vn/hn (15).jpg";
+import hn16 from "../assets/vn/hn (16).jpg";
+import hn17 from "../assets/vn/hn (17).jpg";
+import hn18 from "../assets/vn/hn (18).jpg";
+import hn19 from "../assets/vn/hn (19).jpg";
+import hn20 from "../assets/vn/hn (20).jpg";
+import hn21 from "../assets/vn/hn (21).jpg";
+import hn22 from "../assets/vn/hn (22).jpg";
+import hn23 from "../assets/vn/hn (23).jpg";
 
 import nb from "../assets/vn/nb.jpg";
-import nb2 from "../assets/vn/nb \(2\).jpg";
-import nb3 from "../assets/vn/nb \(3\).jpg";
-import nb4 from "../assets/vn/nb \(4\).jpg";
-import nb5 from "../assets/vn/nb \(5\).jpg";
-import nb6 from "../assets/vn/nb \(6\).jpg";
-import nb7 from "../assets/vn/nb \(7\).jpg";
-import nb8 from "../assets/vn/nb \(8\).jpg";
-  
+import nb2 from "../assets/vn/nb (2).jpg";
+import nb3 from "../assets/vn/nb (3).jpg";
+import nb4 from "../assets/vn/nb (4).jpg";
+import nb5 from "../assets/vn/nb (5).jpg";
+import nb6 from "../assets/vn/nb (6).jpg";
+import nb7 from "../assets/vn/nb (7).jpg";
+import nb8 from "../assets/vn/nb (8).jpg";
 
 import sg from "../assets/vn/sg.jpg";
-import sg2 from "../assets/vn/sg \(2\).jpg";
-import sg3 from "../assets/vn/sg \(3\).jpg";
-import sg4 from "../assets/vn/sg \(4\).jpg";
-import sg5 from "../assets/vn/sg \(5\).jpg";
-import sg6 from "../assets/vn/sg \(6\).jpg";
-import sg7 from "../assets/vn/sg \(7\).jpg";
-import sg8 from "../assets/vn/sg \(8\).jpg";
-import sg9 from "../assets/vn/sg \(9\).jpg";
-import sg10 from "../assets/vn/sg \(10\).jpg";
-import sg11 from "../assets/vn/sg \(11\).jpg";
+import sg2 from "../assets/vn/sg (2).jpg";
+import sg3 from "../assets/vn/sg (3).jpg";
+import sg4 from "../assets/vn/sg (4).jpg";
+import sg5 from "../assets/vn/sg (5).jpg";
+import sg6 from "../assets/vn/sg (6).jpg";
+import sg7 from "../assets/vn/sg (7).jpg";
+import sg8 from "../assets/vn/sg (8).jpg";
+import sg9 from "../assets/vn/sg (9).jpg";
+import sg10 from "../assets/vn/sg (10).jpg";
+import sg11 from "../assets/vn/sg (11).jpg";
+
 const Map = () => {
   const pos = [15.877993203699853, 108.32814843938998];
   const hnpos = [21.03408902244992, 105.8506367973026];
@@ -134,6 +133,7 @@ const Map = () => {
     { original: dn2, thumbnail: dn2 },
     { original: dn3, thumbnail: dn3 },
   ];
+  
   const hapics = [
     { original: ha, thumbnail: ha },
     { original: ha2, thumbnail: ha2 },
@@ -146,6 +146,7 @@ const Map = () => {
     { original: ha9, thumbnail: ha9 },
     { original: ha10, thumbnail: ha10 },
   ];
+  
   const hgpics = [
     { original: hg, thumbnail: hg },
     { original: hg2, thumbnail: hg2 },
@@ -178,8 +179,8 @@ const Map = () => {
     { original: hg29, thumbnail: hg29 },
     { original: hg30, thumbnail: hg30 },
     { original: hg31, thumbnail: hg31 },
-
   ];
+  
   const hnpics = [
     { original: hn2, thumbnail: hn2 },
     { original: hn3, thumbnail: hn3 },
@@ -203,8 +204,17 @@ const Map = () => {
     { original: hn21, thumbnail: hn21 },
     { original: hn22, thumbnail: hn22 },
     { original: hn23, thumbnail: hn23 },
-    
   ];
+  
+  const nbpics = [
+    { original: nb, thumbnail: nb },
+    { original: nb2, thumbnail: nb2 },
+    { original: nb3, thumbnail: nb3 },
+    { original: nb4, thumbnail: nb4 },
+    { original: nb5, thumbnail: nb5 },
+    { original: nb8, thumbnail: nb8 },
+  ];
+  
   const sgpics = [
     { original: sg, thumbnail: sg },
     { original: sg2, thumbnail: sg2 },
@@ -218,16 +228,7 @@ const Map = () => {
     { original: sg10, thumbnail: sg10 },
     { original: sg11, thumbnail: sg11 },
   ];
-
-  const nbpics = [ { original: nb, thumbnail: nb },
-    { original: nb2, thumbnail: nb2 },
-    { original: nb3, thumbnail: nb3 },
-    { original: nb4, thumbnail: nb4 },
-    { original: nb5, thumbnail: nb5 },
-    //{ original: nb6, thumbnail: nb6 },
-    //{ original: nb7, thumbnail: nb7 },
-    { original: nb8, thumbnail: nb8 },
-  ];
+  
   const hlpics = [
     { original: hl, thumbnail: hl},
     { original: hl2, thumbnail:hl2 },
@@ -243,49 +244,39 @@ const Map = () => {
   const [location, setLocation] = useState("");
   const [photosData, setPhotosData] = useState(hapics);
 
-  const handleHoiAnClick = (e) => {
-    //console.log("Hoi An clicked");
+  const handleHoiAnClick = () => {
     setLocation("Hoi An");
   };
 
-  const handleHanoiClick = (e) => {
-    //console.log("Ha Noi clicked");
+  const handleHanoiClick = () => {
     setLocation("Ha Noi");
   };
 
-  const handleSaiGonClick = (e) => {
-    //console.log("Sai Gon clicked");
+  const handleSaiGonClick = () => {
     setLocation("Sai Gon");
   };
 
-  const handleHaLongClick = (e) => {
-    //console.log("Ha Long clicked");
+  const handleHaLongClick = () => {
     setLocation("Ha Long");
   };
 
-  const handleDaNangClick = (e) => {
-    //console.log("Da Nang clicked");
+  const handleDaNangClick = () => {
     setLocation("Da Nang");
   };
 
-  const handleNinhBinhClick = (e) => {
-    //console.log("Ninh Binh clicked");
+  const handleNinhBinhClick = () => {
     setLocation("Ninh Binh");
   };
 
-  const handleHaGiangClick = (e) => {
-    //console.log("Ha Giang clicked");
+  const handleHaGiangClick = () => {
     setLocation("Ha Giang");
   };
 
-  const handleCamRanhClick = (e) => {
-    //console.log("Ha Giang clicked");
+  const handleCamRanhClick = () => {
     setLocation("Cam Ranh");
   };
 
-
   const handleLocationChange = () => {
-    console.log("triggering");
     if (location === "Hoi An") {
       setPhotosData(hapics);
     } else if (location === "Da Nang")  {
@@ -310,110 +301,155 @@ const Map = () => {
   }, [location]);
 
   return (
-    <div className="container" style={{display: "flex", alignItems: "flex-start"}}>
-      <div className="photo-thumbnails-container" style={{ marginRight: "10px", width: "50vw"}}>
-        <ImageGallery
-          items={photosData}
-          showPlayButton={false}
-          showIndex={true}
-        />
+    <div className="map-container page-transition">
+      <div className="map-header">
+        <h1>Travel Map</h1>
+        <p>Explore my photography journey across Vietnam. Click on markers to view photos from each location.</p>
       </div>
-      
-      <MapContainer
-        center={pos}
-        zoom={6}
-        style={{ width: "50vw", height: "80vh"}}
-      >
-        <TileLayer
-          url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=bCJm1FRgtc2tZsmRppy7"
-          attribution={
-            '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-          }
-        />
 
-        <Marker
-            position={hgpos}
-            eventHandlers={{
-              click: handleHaGiangClick,
-            }}
-            icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-            <Popup>Hà Giang</Popup>
-        </Marker>
+      <div className="map-content">
+        <div className="map-section">
+          <h2>Interactive Map</h2>
+          <MapContainer
+            center={pos}
+            zoom={6}
+            className="leaflet-container"
+          >
+            <TileLayer
+              url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=bCJm1FRgtc2tZsmRppy7"
+              attribution={
+                '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+              }
+            />
 
-        <Marker
-          position={hnpos}
-          eventHandlers={{
-            click: handleHanoiClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-          <Popup>Hà Nội</Popup>
-        </Marker>
+            <Marker
+                position={hgpos}
+                eventHandlers={{
+                  click: handleHaGiangClick,
+                }}
+                icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+                <Popup>
+                  <h3>Hà Giang</h3>
+                  <p>Northern Vietnam's mountainous region</p>
+                  <a href="#" className="view-photos-btn">View Photos</a>
+                </Popup>
+            </Marker>
 
-        <Marker
-          position={hlpos}
-          eventHandlers={{
-            click: handleHaLongClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-          <Popup>Hạ Long</Popup>
-        </Marker>
+            <Marker
+              position={hnpos}
+              eventHandlers={{
+                click: handleHanoiClick,
+              }}
+              icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+              <Popup>
+                <h3>Hà Nội</h3>
+                <p>Vietnam's historic capital city</p>
+                <a href="#" className="view-photos-btn">View Photos</a>
+              </Popup>
+            </Marker>
 
-        <Marker
-          position={nbpos}
-          eventHandlers={{
-            click: handleNinhBinhClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-          <Popup>Ninh Bình</Popup>
-        </Marker>
+            <Marker
+              position={hlpos}
+              eventHandlers={{
+                click: handleHaLongClick,
+              }}
+              icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+              <Popup>
+                <h3>Hạ Long</h3>
+                <p>UNESCO World Heritage site</p>
+                <a href="#" className="view-photos-btn">View Photos</a>
+              </Popup>
+            </Marker>
 
-        <Marker
-          position={dnpos}
-          eventHandlers={{
-            click: handleDaNangClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-          <Popup>Đà Nẵng</Popup>
-        </Marker>
+            <Marker
+              position={nbpos}
+              eventHandlers={{
+                click: handleNinhBinhClick,
+              }}
+              icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+              <Popup>
+                <h3>Ninh Bình</h3>
+                <p>Ancient capital and natural beauty</p>
+                <a href="#" className="view-photos-btn">View Photos</a>
+              </Popup>
+            </Marker>
 
-        <Marker
-          position={pos}
-          eventHandlers={{
-            click: handleHoiAnClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-          <Popup>Hội An</Popup>
-        </Marker>
+            <Marker
+              position={dnpos}
+              eventHandlers={{
+                click: handleDaNangClick,
+              }}
+              icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+              <Popup>
+                <h3>Đà Nẵng</h3>
+                <p>Coastal city and cultural hub</p>
+                <a href="#" className="view-photos-btn">View Photos</a>
+              </Popup>
+            </Marker>
 
-        <Marker
-          position={crpos}
-          eventHandlers={{
-            click: handleCamRanhClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-          <Popup>Cam Ranh</Popup>
-        </Marker>
+            <Marker
+              position={pos}
+              eventHandlers={{
+                click: handleHoiAnClick,
+              }}
+              icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+              <Popup>
+                <h3>Hội An</h3>
+                <p>Ancient trading port</p>
+                <a href="#" className="view-photos-btn">View Photos</a>
+              </Popup>
+            </Marker>
 
-        <Marker
-          position={sgpos}
-          eventHandlers={{
-            click: handleSaiGonClick,
-          }}
-          icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
-        >
-          <Popup>Sài Gòn</Popup>
-        </Marker>
+            <Marker
+              position={crpos}
+              eventHandlers={{
+                click: handleCamRanhClick,
+              }}
+              icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+              <Popup>
+                <h3>Cam Ranh</h3>
+                <p>Coastal beauty and beaches</p>
+                <a href="#" className="view-photos-btn">View Photos</a>
+              </Popup>
+            </Marker>
 
-      </MapContainer>
+            <Marker
+              position={sgpos}
+              eventHandlers={{
+                click: handleSaiGonClick,
+              }}
+              icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}
+            >
+              <Popup>
+                <h3>Sài Gòn</h3>
+                <p>Modern metropolis of Vietnam</p>
+                <a href="#" className="view-photos-btn">View Photos</a>
+              </Popup>
+            </Marker>
 
-      
+          </MapContainer>
+        </div>
+
+        <div className="map-section">
+          <h2>Photo Gallery</h2>
+          <ImageGallery
+            items={photosData}
+            showPlayButton={false}
+            showIndex={true}
+            showFullscreenButton={true}
+            showNav={true}
+            slideInterval={3000}
+            slideOnThumbnailOver={true}
+          />
+        </div>
+      </div>
     </div>
   );
 };

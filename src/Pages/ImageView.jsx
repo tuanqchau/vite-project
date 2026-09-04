@@ -36,6 +36,16 @@ import nyc4 from '../assets/img-small/img8-small.jpg'
 import az from '../assets/img-small/img2-small.jpg'
 import az2 from '../assets/img-small/img3-small.jpg'
 import az3 from '../assets/img-small/img4-small.jpg'
+
+//summer25
+import wy1 from  "../assets/summer25/WY-1.jpg";
+import wy2 from  "../assets/summer25/WY-2.jpg";
+import wy3 from  "../assets/summer25/WY-3.jpg";
+import wy4 from  "../assets/summer25/WY-4.jpg";
+import mt1 from  "../assets/summer25/MT-1.jpg";
+import mt2 from  "../assets/summer25/MT-2.jpg";
+import mt3 from  "../assets/summer25/MT-3.jpg";
+import mt4 from  "../assets/summer25/MT-4.jpg";
 const ImageView = ({imageData}) => {
   const { id } = useParams();
   const location = useLocation();
@@ -78,6 +88,17 @@ const ImageView = ({imageData}) => {
     { id: 3, src: az3 }
   ]
 
+  const summer25Photos = [
+    { id: 1, src: wy1 },
+    { id: 2, src: wy2 },
+    { id: 3, src: wy3 },
+    { id: 4, src: wy4 },
+    { id: 5, src: mt1 },
+    { id: 6, src: mt2 },
+    { id: 7, src: mt3 },
+    { id: 8, src: mt4 }
+  ]
+
 
   useEffect(() => {
     if (photo.title==='Vietnam') {
@@ -91,6 +112,9 @@ const ImageView = ({imageData}) => {
     }
     else if (photo.title==='Arizona') {
       setPhotoList(azPhotos)
+    }
+    else if (photo.title==='Summer 2025') {
+      setPhotoList(summer25Photos)
     }
   },[])
     return (

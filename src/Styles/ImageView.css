@@ -1,0 +1,136 @@
+.imageview-container {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.imageview-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.imageview-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.imageview-header p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.imageview-content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 0;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.imageview-content:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Image Gallery Customization */
+.imageview-content .image-gallery {
+  max-height: 70vh;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.imageview-content .image-gallery .image-gallery-slide {
+  border-radius: 0;
+}
+
+.imageview-content .image-gallery .image-gallery-image {
+  border-radius: 0;
+}
+
+.imageview-content .image-gallery .image-gallery-thumbnail {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.imageview-content .image-gallery .image-gallery-thumbnail.active {
+  border: 2px solid var(--accent-color);
+}
+
+.imageview-content .image-gallery .image-gallery-thumbnail:hover {
+  border: 2px solid var(--accent-color);
+}
+
+.imageview-content .image-gallery .image-gallery-icon {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 0;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.imageview-content .image-gallery .image-gallery-icon:hover {
+  background: var(--accent-gradient);
+  transform: scale(1.1);
+}
+
+.imageview-content .image-gallery .image-gallery-fullscreen-button,
+.imageview-content .image-gallery .image-gallery-play-button,
+.imageview-content .image-gallery .image-gallery-left-nav,
+.imageview-content .image-gallery .image-gallery-right-nav {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 0;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.imageview-content .image-gallery .image-gallery-fullscreen-button:hover,
+.imageview-content .image-gallery .image-gallery-play-button:hover,
+.imageview-content .image-gallery .image-gallery-left-nav:hover,
+.imageview-content .image-gallery .image-gallery-right-nav:hover {
+  background: var(--accent-gradient);
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .imageview-container {
+    padding: 20px;
+  }
+  
+  .imageview-header h1 {
+    font-size: 36px;
+  }
+  
+  .imageview-header p {
+    font-size: 16px;
+  }
+  
+  .imageview-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageview-container {
+    padding: 15px;
+  }
+  
+  .imageview-header h1 {
+    font-size: 28px;
+  }
+  
+  .imageview-content {
+    padding: 15px;
+  }
+} 

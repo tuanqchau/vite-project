@@ -1,29 +1,105 @@
-.navbar-container { 
-    padding: 20px; 
-    margin-bottom: 50px;
+/* .navbar-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0px 24px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  background: none; 
+  border: none;
+  box-shadow: none;
+} */
+
+
+.navbar-container {
+  width: 95%;     /* instead of 100% */
+  max-width: none; /* let 95% control it */
+  margin: 0 auto;
+  padding: 32px 0 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+  color: var(--brand);
+  text-transform: uppercase;
+  text-decoration: none;
+  /* Ensure a smooth color transition for dark mode swap */
+  transition: color var(--transition-speed); 
+}
+.navbar-brand:hover {
+  color: var(--text-secondary);
+}
+
+/* 🎯 NEW: Container for the nav links and the theme button */
+.nav-group {
     display: flex;
-    justify-content: center;
-  }
-  
-  .nav-link {
-    color: black; 
-    text-decoration: none; 
-    margin-right: 20px; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    font-size: 20px;
-  }
-  
-  .nav-link:hover {
-    color:rgb(127, 127, 127);
-    transition: all 0.1s ease-in-out;
+    align-items: center;
+    gap: 32px; /* This sets the gap between the nav links group and the button */
+}
 
-  }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center; 
 
-  /* Media query for screens 600px or smaller (phones) */
-@media (max-width: 600px) {
-  .nav-link {
-      font-size: 16px;  /* Smaller font size for phones */
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  position:relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  transition: color 0.15s;
+   /* Use theme variable for transition speed */
+  transition: color var(--transition-speed);
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; 
+  left: 50%;
+  width: 0;
+  height: 2px; 
+  background-color: var(--text-secondary);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+.nav-link:hover {
+  /* Update hover color to use theme variable for consistency */
+  color: var(--text-secondary); 
+}
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+.nav-link.active {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 12px 12px 12px;
+  }
+  .nav-links {
+    gap: 18px;
   }
 }
   
