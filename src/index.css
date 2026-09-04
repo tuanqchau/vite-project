@@ -1,4 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --background: #f7f7f7;
+  --text-primary: #222;
+  --text-secondary: #666;
+  --brand: #222;
+  --image-bg-light: #fff; /* Use this to color the background behind images */
+  --transition-speed: 0.3s;
+  /* Input border colors for light mode */
+
+  --input-border: rgba(0, 0, 0, 0.3); 
+  --input-focus: #6a6a6a;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+/* 🌙 DARK MODE OVERRIDES */
+body.dark-mode {
+  --background: #121212;   /* Dark background */
+  --text-primary: #f0f0f0; /* Light text */
+  --text-secondary: #a0a0a0; /* Lighter secondary text */
+  --brand: #f0f0f0;        /* Light brand color */
+  --image-bg-light: #1f1f1f;
+
+  /* Input border colors for dark mode */
+  --input-border: rgba(255, 255, 255, 0.4);
+  --input-focus: rgba(255, 255, 255, 0.8);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  min-height: 100vh;
+  /* Add transition for a smooth theme switch */
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease; 
+}
+
 #root {
-    /* justify-content: center;
-    align-items: center; */
+  min-height: 100vh;
+  /* Use transparent or inherit background for #root to ensure body color shows through */
+  background: transparent; 
+}
+
+.page-loading {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  color: var(--text-secondary);
+}
+
+/* Ensure the gallery header uses the brand color for thematic consistency */
+.gallery-header h1 {
+  color: var(--brand);
+}
+/* Ensure secondary text also changes */
+.gallery-header p {
+  color: var(--text-secondary);
 }
