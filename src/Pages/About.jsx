@@ -33,8 +33,7 @@ const About = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{duration: 0.8, delay: 0.2, ease: "easeOut"}}
             > 
-              <h2 className='name'>Tuan Chau</h2>
-              <p>i like 35mm film and vietnamese coffee!!!!!</p>
+              <h2 className='name'>Tuan</h2>
               <Socials />
               {/* <ul>
                 <li>

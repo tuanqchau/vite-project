@@ -12,6 +12,11 @@
   --input-border: rgba(0, 0, 0, 0.3); 
   --input-focus: #6a6a6a;
 }
+
+html {
+  overflow-y: scroll;
+}
+
 /* 🌙 DARK MODE OVERRIDES */
 body.dark-mode {
   --background: #121212;   /* Dark background */
@@ -45,6 +50,13 @@ body {
   min-height: 100vh;
   /* Use transparent or inherit background for #root to ensure body color shows through */
   background: transparent; 
+}
+
+.page-loading {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  color: var(--text-secondary);
 }
 
 /* Ensure the gallery header uses the brand color for thematic consistency */

@@ -26,6 +26,22 @@
   gap: 1.2rem;
 }
 
+.honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.form-status {
+  min-height: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .contact-form label {
   font-weight: 600;
   color: var(--text-secondary);

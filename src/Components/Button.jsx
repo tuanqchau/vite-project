@@ -1,10 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const Button = ({text}) => {
+const Button = ({ text, type = "button", disabled = false }) => {
   return (
     <StyledWrapper>
-      <button className="ui-btn">
+      <button className="ui-btn" type={type} disabled={disabled}>
         <span>
           {text} 
         </span>
@@ -67,6 +66,16 @@ const StyledWrapper = styled.div`
 
   .ui-btn:hover, .ui-btn:focus {
     background: var(--btn-hover-bg);
+  }
+
+  .ui-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+
+  .ui-btn:disabled:hover,
+  .ui-btn:disabled:focus {
+    background: var(--btn-default-bg);
   }
 
   .ui-btn:hover span, .ui-btn:focus span {

@@ -122,6 +122,10 @@
   width: 100%;
   margin-bottom: 50px; /* vertical gap */
   overflow: hidden;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
 }
 
 .gallery-front-container img {
@@ -135,6 +139,11 @@
   /* filter: brightness(1.1); */
   filter: grayscale(100%);
 }
+
+.gallery-front-container:focus-visible {
+  outline: 3px solid var(--text-primary);
+  outline-offset: 5px;
+}
 /* Remove overlay and hover effects */
 .overlay { display: none; }
 
@@ -147,4 +156,3 @@
     padding-left: 16px;
   }
 }
-

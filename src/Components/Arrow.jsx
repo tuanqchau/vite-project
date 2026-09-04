@@ -1,9 +1,13 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const Arrow = ({ direction = "right", onClick }) => {
   return (
-    <StyledWrapper direction={direction} onClick={onClick}>
+    <StyledWrapper
+      type="button"
+      direction={direction}
+      onClick={onClick}
+      aria-label={`Show ${direction === "left" ? "previous" : "next"} photograph`}
+    >
       <div className="arrow">
         <div className={`arrow-top ${direction}`} />
         <div className={`arrow-bottom ${direction}`} />
@@ -12,7 +16,10 @@ const Arrow = ({ direction = "right", onClick }) => {
   );
 };
 
-const StyledWrapper = styled.div`
+const StyledWrapper = styled.button`
+  border: 0;
+  background: transparent;
+  padding: 12px;
   cursor: pointer;
   position: fixed;
   top: 50%;
@@ -112,6 +119,11 @@ const StyledWrapper = styled.div`
 
   .arrow:active {
     transform: scale(0.9);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
   }
 `;
 
